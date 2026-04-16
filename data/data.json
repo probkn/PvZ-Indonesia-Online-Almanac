@@ -1,0 +1,11 @@
+{
+  "bg_mapping": [
+    { "start": 0, "end": 5, "bg": "seedlinkage" },
+    { "start": 40, "end": 40, "bg": "seedlinkage" },
+    { "start": 1027, "end": 1047, "bg": "SeedPacket_Other" },
+    { "start": 6, "end": 11, "bg": "SeedPacket_Night" },
+    { "start": 12, "end": 18, "bg": "SeedPacket_Pool" },
+    { "start": 19, "end": 25, "bg": "seedfog" },
+    { "start": 26, "end": 32, "bg": "seedroof" }
+  ]
+}

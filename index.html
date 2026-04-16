@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvZ Fusion Almanac</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="almanac-container">
+        <div class="tabs">
+            <button onclick="switchTab('plants')" id="btn-plants" class="active">Tanaman</button>
+            <button onclick="switchTab('zombies')" id="btn-zombies">Zombi</button>
+        </div>
+
+        <div class="main-content">
+            <div class="list-container" id="item-list"></div>
+
+            <div class="detail-view" id="detail-view">
+                <div class="preview-box">
+                    <div class="seed-composite" id="detail-image-container">
+                        </div>
+                </div>
+
+                <h2 id="detail-name">Pilih Tanaman</h2>
+
+                <div class="info-scroll-area">
+                    <div id="detail-intro"></div>
+                    <div id="detail-cost" style="margin: 10px 0; font-weight: bold; color: #b00000;"></div>
+                    <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.2); margin: 10px 0;">
+                    <div id="detail-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="almanac.js"></script>
+</body>
+</html>

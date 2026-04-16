@@ -1,0 +1,1150 @@
+{
+    "zombies": [
+        {
+            "theZombieType": 0,
+            "name": "Zombi",
+            "introduce": "<color=#3D1400>Zombi biasa membenci kata \"biasa\" dalam namanya. Dia tidak menganggap dirinya sebagai musuh tanpa nama atau mayat biasa yang ada di mana-mana. Dia adalah individu yang mandiri, dan dia berencana melakukan sesuatu yang luar biasa, bahkan jika itu harus membunuhmu.</color>",
+            "info": "<size=14><color=blue>Zombi yang sangat sederhana.\n\n<color=black>Damage: </color><color=red>50</color>\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Catatan: </color><color=red>Zombi menggigit setiap 0.5 detik. Mati saat nyawa di bawah batas kritis. Batas kritis umumnya 1/3 ketahanan, kecuali kendaraan, Zombi Raksasa, dan patung yang batas kritisnya adalah 0.</color></color></size>"
+        },
+        {
+            "theZombieType": 1,
+            "name": "Zombi Bendera",
+            "introduce": "<color=#3D1400>Tidak diragukan lagi, Zombi Bendera menyukai otak, tapi secara pribadi dia juga sangat terobsesi dengan bendera. Mungkin karena ada gambar otak di benderanya, sulit untuk mengatakannya.</color>",
+            "info": "<size=14><color=blue>Bendera di tangannya menandakan datangnya gelombang besar Zombi.\n\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Fitur: </color><color=red>Muncul pada gelombang bendera. Kecepatan gerak sedikit lebih cepat dari Zombi biasa.</color></color></size>"
+        },
+        {
+            "theZombieType": 2,
+            "name": "Zombi Kerucut Lalu Lintas",
+            "introduce": "<color=#3D1400>Zombi Kerucut sebenarnya tidak tahu apa itu kerucut lalu lintas, dia hanya merasa benda ini sangat mirip dengan wadah es krim, dan setelah sadar tidak bisa dimakan, dia langsung menaruhnya di atas kepala.</color>",
+            "info": "<size=14><color=blue>Zombi yang memakai kerucut pelindung.\n\n<color=black>Ketahanan: </color><color=red>270 + 370 (Tipe 1)</color></color></size>"
+        },
+        {
+            "theZombieType": 3,
+            "name": "Zombi Galah",
+            "introduce": "<color=#3D1400>Zombi Galah dulunya adalah atlet lompat tinggi terbaik di kotanya, sampai suatu hari dia lupa menaruh matras di belakang tiang lompat.</color>",
+            "info": "<size=14><color=blue>Menggunakan galah untuk melompati tanaman pertama yang ditemui.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Kecepatan: </color><color=red>Sedang, menjadi sangat lambat setelah melompat</color>\n<color=black>Fitur: </color><color=red>Melompati tanaman pertama (dapat terhalang tanaman tinggi), lalu kehilangan galahnya.</color></color></size>"
+        },
+        {
+            "theZombieType": 4,
+            "name": "Zombi Ember",
+            "introduce": "<color=#3D1400>Dulu, Zombi Ember yang sebenarnya adalah seorang tukang cat dianggap sebagai jenius di antara para zombi karena strategi embernya yang inovatif. Setelah beberapa tahun berlalu, para zombi mulai curiga apakah dia masih punya kartu as rahasia lainnya.</color>",
+            "info": "<size=14><color=blue>Zombi yang memakai ember besi.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Ember dapat ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 5,
+            "name": "Zombi Koran",
+            "introduce": "<color=#3D1400>Kamu tidak bisa menyalahkannya karena begitu marah, dia hanya kurang sedikit lagi untuk menyelesaikan teka-teki silang ini (kata menurun nomor 23 adalah \"Otak\"), itulah sebabnya dia memegang korannya terbalik.</color>",
+            "info": "<size=14><color=blue>Sangat benci jika ada yang mengganggu waktu membacanya.\n\n<color=black>Ketahanan: </color><color=red>270 + 200 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Setelah kehilangan koran, kecepatan gerak meningkat 2.5x dan kecepatan serang meningkat 1.5x.</color></color></size>"
+        },
+        {
+            "theZombieType": 6,
+            "name": "Zombi Galah Penari",
+            "introduce": "<color=#3D1400>Prestasi olahraga Zombi Galah Penari sangat biasa di dunia zombi. Atas saran dari para asistennya, dia mengambil jalur idola. Sekarang lagu populernya yang bekerja sama dengan Michael Jackson yang berjudul \"Hanya Otak\" sedang meledak.</color>",
+            "info": "<size=14><color=blue>Penari hebat yang juga seorang atlet galah.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Masuk dengan berlari, melompati tanaman pertama, lalu memanggil 4 Zombi Galah Pendamping di sekitarnya. Tidak akan memanggil jika terhalang.</color></color></size>"
+        },
+        {
+            "theZombieType": 7,
+            "name": "Zombi Galah Pendamping",
+            "introduce": "<color=#3D1400>Dulu empat bersaudara pendamping ini adalah yatim piatu yang kesepian. Seiring waktu, kepribadian mereka menjadi menyimpang dan sering menindas orang lain di sekolah zombi. Sampai suatu hari mereka melihat Zombi Galah Penari menari dengan riang, hati mereka terasa tersentuh. Sejak hari itu, mereka berlima tampil bersama di panggung.</color>",
+            "info": "<size=14><color=blue>Pendamping penari hebat yang juga seorang atlet galah.\n\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Fitur: </color><color=red>Memiliki karakteristik yang sama dengan Zombi Galah.</color></color></size>"
+        },
+        {
+            "theZombieType": 8,
+            "name": "Zombi Pintu Besi",
+            "introduce": "<color=#3D1400>Zombi Pintu Besi dulunya adalah anggota satuan tugas khusus. Dia pemarah tapi memiliki hati yang adil, tidak pernah bernegosiasi dengan perampok dan langsung mendobrak pintu untuk menyelamatkan sandera. Setelah menjadi zombi, hatinya tetap baik. Dia melihat sekelompok zombi menculik zombi kecil dan ingin mendobrak masuk, tapi karena zombi lain tahu sifatnya, mereka mengoleskan lem di pintu sehingga tangannya tidak bisa lepas.</color>",
+            "info": "<size=14><color=blue>Zombi yang membawa pintu besi.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Pintu besi dapat ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 9,
+            "name": "Zombi Rugbi",
+            "introduce": "<color=#3D1400>Zombi Rugbi adalah bintang olahraga di antara para zombi. Sosoknya di lapangan dipuja banyak zombi, dan banyak perusahaan ingin mempekerjakannya. Tapi permintaan gajinya terlalu tinggi, sepuluh ribu otak per tahun?</color>",
+            "info": "<size=14><color=blue>Pemain rugbi profesional yang memakai helm pelindung.\n\n<color=black>Ketahanan: </color><color=red>270 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Helm dapat ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 10,
+            "name": "Zombi Penari",
+            "introduce": "<color=#3D1400>Jas hitam, topi hitam, dia tidak bekerja di bidang pemakaman, dia hanya seorang penari, penari yang sangat keren. Kamu bisa memanggilnya Michael Jackson.</color>",
+            "info": "<size=14><color=blue>Penghormatan untuk raja dansa legendaris Michael Jackson! Masuk dengan langkah dansa luar angkasa yang klasik.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Masuk dengan langkah luar angkasa, memanggil 4 Zombi Galah Penari di sekitarnya. Jika ada rekan yang mati, dia akan memanggil lagi setelah 4 langkah maju untuk melengkapi jumlah rekan.</color></color></size>"
+        },
+        {
+            "theZombieType": 11,
+            "name": "Zombi Pelampung Bebek",
+            "introduce": "<color=#3D1400>Hanya zombi tertentu yang bisa menjadi Zombi Pelampung Bebek, tidak semua zombi mampu melakukannya. Beberapa pelampung sedikit bocor, tapi mereka tidak bisa memperbaikinya, sehingga setelah terlepas mereka selamanya menyerah pada keinginan mencari otak.</color>",
+            "info": "<size=14><color=blue>Zombi biasa yang dapat bergerak di jalur air.\n\n<color=black>Ketahanan: </color><color=red>270</color></color></size>"
+        },
+        {
+            "theZombieType": 12,
+            "name": "Zombi Kerucut Pelampung Bebek",
+            "introduce": "<color=#3D1400>Ada pepatah bilang murid yang buruk punya banyak alat tulis, tapi Zombi Kerucut Bebek tidak setuju, karena dia tidak mau mengakui kalau dia adalah murid yang buruk.</color>",
+            "info": "<size=14><color=blue>Zombi kerucut yang dapat bergerak di jalur air.\n\n<color=black>Ketahanan: </color><color=red>270 + 370 (Tipe 1)</color></color></size>"
+        },
+        {
+            "theZombieType": 13,
+            "name": "Zombi Ember Pelampung Bebek",
+            "introduce": "<color=#3D1400>Zombi Ember sebenarnya tidak ingin memakai pelampung bocor itu, tapi apa daya, siapa suruh dia memakai ember besi yang sangat mudah berkarat.</color>",
+            "info": "<size=14><color=blue>Zombi ember yang dapat bergerak di jalur air.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color></color></size>"
+        },
+        {
+            "theZombieType": 14,
+            "name": "Zombi Lumba-lumba Robot",
+            "introduce": "<color=#3D1400>Robot lumba-lumba kuat yang dibuat berdasarkan prinsip bionik. Gagah, berwibawa, dan merupakan senjata perang impian para zombi. \"Sekarang kita hanya perlu menyelesaikan masalah rumput laut yang tersangkut di baling-baling,\" kata Dr. Edgar.</color>",
+            "info": "<size=14><color=blue>Kapal selam berbentuk lumba-lumba dengan pengemudi zombi penyelam.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Maju dengan cepat dan menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 15,
+            "name": "Zombi Pelajar",
+            "introduce": "<color=#3D1400>Zombi Pelajar adalah otoritas di dunia akademis. Kamu bisa sering melihatnya di perpustakaan. Dia sangat suka membaca, jadi diganggu saat membaca akan membuatnya sangat marah. Kemudian pria tua ini akan menunjukkan padamu apa artinya \"Pengetahuan adalah Kekuatan\".</color>",
+            "info": "<size=14><color=blue>Zombi berilmu yang sangat benci interupsi saat membaca.\n\n<color=black>Damage: </color><color=red>400</color>\n<color=black>Ketahanan: </color><color=red>720 + 1100 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Kebal saat memegang buku. Setelah buku hilang, kebal sejenak dari efek kontrol, lalu kecepatan gerak naik 10x dan kecepatan serang naik 3x.</color></color></size>"
+        },
+        {
+            "theZombieType": 16,
+            "name": "Zombi Truk Es Krim",
+            "introduce": "<color=#3D1400>Keahlian mengemudinya sangat bagus, karena jarang ada zombi yang bisa menyetir dari arena es hingga ke rumput. Dia selalu menghibur diri dengan itu sebelum membayar denda. Dia tidak mengendarai merk Zamboni, tapi merk Zomboni buatan Perusahaan Z.</color>",
+            "info": "<size=14><color=blue>Sebenarnya ini adalah kendaraan pembuat jalan es.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Tingkat anti-dingin 2. Menggilas tanaman. Meninggalkan jejak es secara terus-menerus.</color></color></size>"
+        },
+        {
+            "theZombieType": 17,
+            "name": "Zombi Penyelam",
+            "introduce": "<color=#3D1400>Masker penyelamnya pecah, tapi itu tidak menghalanginya untuk menyelam dan muncul di air. Bukan karena teknik pernapasan rahasia, tapi karena zombi memang tidak perlu bernapas.</color>",
+            "info": "<size=14><color=blue>Bersembunyi di dalam air untuk mendekat diam-diam.\n\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Fitur: </color><color=red>Tidak bisa terkena peluru lurus saat menyelam. Akan muncul ke permukaan saat dekat tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 18,
+            "name": "Zombi Kereta Luncur Es",
+            "introduce": "<color=#3D1400>Kendaraan ini dimodifikasi oleh penggemar olahraga ski agar bisa berjalan mudah di salju dan es, bahkan lebih cepat daripada di rumput. Namun ada satu kekurangan: hanya bisa dihidupkan di atas jalur es.</color>",
+            "info": "<size=14><color=blue>Kereta luncur modifikasi, sangat lambat di tanah datar.\n\n<color=black>Ketahanan: </color><color=red>2700</color>\n<color=black>Fitur: </color><color=red>Tingkat anti-dingin 2. Bergerak jauh lebih cepat di atas jalur es.</color></color></size>"
+        },
+        {
+            "theZombieType": 19,
+            "name": "Zombi Lumba-lumba",
+            "introduce": "<color=#3D1400>Dia adalah perawat lumba-lumba yang merangkap sebagai penampil di akuarium. Lumba-lumba yang ia tunggangi sebenarnya juga zombi, hanya saja lumba-lumba ini tidak tertarik pada otak.</color>",
+            "info": "<size=14><color=blue>Menunggangi lumba-lumba untuk melompati tanaman pertama.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Kecepatan: </color><color=red>Cepat, menjadi lambat setelah kehilangan lumba-lumba.</color></color></size>"
+        },
+        {
+            "theZombieType": 20,
+            "name": "Zombi Trisula",
+            "introduce": "<color=#3D1400>Awalnya hanya atlet lempar lembing biasa yang menjadi nelayan setelah pensiun. Dia mencoba menangkap ikan di sungai tapi lupa kalau dia tidak bisa berenang. Setelah tenggelam dan muncul kembali, dia menjadi seperti ini.</color>",
+            "info": "<size=14><color=blue>Pelari rawa yang menyerang jarak jauh dengan lemparan trisula!\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Melemparkan trisula setelah 6-9 detik, memberikan Damage sebesar 20% dari sisa nyawa tanaman (minimal 60).</color></color></size>"
+        },
+        {
+            "theZombieType": 21,
+            "name": "Zombi Berlian",
+            "introduce": "<color=#3D1400>Malam ini mereka akan membuka dunia perak yang bersinar. Mata mereka adalah bintang paling terang di langit malam. Setiap kali aku membuka tutupnya, rasanya seperti membuka pintu misterius ke dunia lain.</color>",
+            "info": "<size=14><color=blue>Boneka yang terbuat dari berlian, apa isinya?\n\n<color=black>Ketahanan: </color><color=red>2000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Munculkan Zombi Boneka Emas saat pelindung hancur.</color></color></size>"
+        },
+        {
+            "theZombieType": 22,
+            "name": "Zombi Emas",
+            "introduce": "<color=#3D1400>Di bawah kotak emas masih ada kotak warna lain, coba tebak kotak di dalamnya terbuat dari bahan apa?</color>",
+            "info": "<size=14><color=blue>Boneka yang terbuat dari emas, apa isinya?\n\n<color=black>Ketahanan: </color><color=red>2000 + 1350 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Munculkan Zombi Boneka Perak saat pelindung hancur.</color></color></size>"
+        },
+        {
+            "theZombieType": 23,
+            "name": "Zombi Perak",
+            "introduce": "<color=#3D1400>Zombi ini menganggap kotak di kepalanya adalah panci. Kenapa kamu tidak mencoba mengerti pikirannya saja? Lagipula ada tanda seru di atas kotaknya, kan?</color>",
+            "info": "<size=14><color=blue>Boneka yang terbuat dari perak, apa isinya?\n\n<color=black>Ketahanan: </color><color=red>2000 + 720 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Munculkan Zombi Kerucut saat pelindung hancur.</color></color></size>"
+        },
+        {
+            "theZombieType": 24,
+            "name": "Zombi Kotak Musik",
+            "introduce": "<color=#3D1400>Sebenarnya dia adalah pasien gangguan jiwa, tapi sirkus tetap menerimanya bekerja. Jangan penasaran dengan apa yang ada di dalam kotaknya, benda itu dijamin akan membuatmu sangat terkejut.</color>",
+            "info": "<size=14><color=blue>Kotak musik yang berputar mengeluarkan melodi indah, eh?!\n\n<color=black>Damage Ledakan: </color><color=red>1 Juta</color>\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Berpeluang meledakkan diri dan memusnahkan tanaman di area 3x3.</color></color></size>"
+        },
+        {
+            "theZombieType": 25,
+            "name": "Zombi Balon",
+            "introduce": "<color=#3D1400>Sebagai salah satu pencipta Kirov, dia selalu ditanya kenapa mengikat balon ke tubuhnya. \"Itu kesimpulan dari kebijaksanaanku.\" Padahal sebenarnya balonnya cuma tidak sengaja tersangkut.</color>",
+            "info": "<size=14><color=blue>Menyelinap masuk melalui jalur udara.\n\n<color=black>Ketahanan: </color><color=red>270 + 20 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Tidak bisa diserang sebagian besar tanaman darat saat terbang.</color></color></size>"
+        },
+        {
+            "theZombieType": 26,
+            "name": "Zombi Kapal Udara",
+            "introduce": "<color=#3D1400>Karya terbaru Dr. Edgar yang menjadi asisten handal para zombi. Mereka menebak-nebak siapa yang mengemudikan senjata kuat ini. Mungkin zombi kecil, atau kapalnya sendiri adalah zombi? Dr. Edgar sedang mempertimbangkan menjadikannya pesawat tanpa awak.</color>",
+            "info": "<size=14><color=blue>Terbang lambat dan menjatuhkan bom kotak musik ke tanaman di bawahnya.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Terpukul mundur oleh daun semanggi. Menjatuhkan bom setiap 3 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 27,
+            "name": "Zombi Paus Putih",
+            "introduce": "<color=#3D1400>Paus putih yang ditungganginya punya kemampuan melompat yang luar biasa. Zombi lumba-lumba sangat iri, tapi penunggang paus putih sendiri sebenarnya tidak bisa mengendalikan pausnya dan sering terbawa ke arah berlawanan.</color>",
+            "info": "<size=14><color=blue>Melompati tiga tanaman sekaligus lalu melarikan diri.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Melompat sejauh 3 kotak (tidak terhalang tanaman tinggi), lalu berbalik arah setelah kehilangan paus.</color></color></size>"
+        },
+        {
+            "theZombieType": 28,
+            "name": "Zombi Penambang",
+            "introduce": "<color=#3D1400>Dulu dia benci jamur magnet karena alat kerjanya sering disita. Sekarang dia lebih benci labu penambang karena kepalanya sering terbentur, yang membuatnya jauh lebih menderita.</color>",
+            "info": "<size=14><color=blue>Menggali terowongan untuk menyelinap ke belakang pertahanan.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Bisa ditarik jamur magnet atau dihentikan oleh labu khusus. Berbalik arah di ujung kiri lalu muncul ke permukaan.</color></color></size>"
+        },
+        {
+            "theZombieType": 29,
+            "name": "Zombi Balon Ember",
+            "introduce": "<color=#3D1400>Zombi lain menjauhinya bukan karena dia terus-menerus bercerita tentang sejarah kapal udara, tapi karena baling-baling di balonnya benar-benar sangat berisik.</color>",
+            "info": "<size=14><color=blue>Memiliki sistem pengaturan sayap yang canggih, tidak takut daun semanggi!\n\n<color=black>Ketahanan: </color><color=red>270 + 500 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap efek hembusan daun semanggi. Setelah mendarat, ia memiliki ketahanan pelindung tambahan sebesar 2200.</color></color></size>"
+        },
+        {
+            "theZombieType": 30,
+            "name": "Zombi Badut",
+            "introduce": "<color=#3D1400>Meledakkan diri adalah seni tertinggi bagi setiap zombi badut. Slogan \"Raja badut tidak akan melepas topeng atau kotaknya\" membakar semangat para zombi, sehingga ia pasti akan meledak sebelum mati.</color>",
+            "info": "<size=14><color=blue>Mau berakhir? Hehe—belum selesai!\n\n<color=black>Ketahanan: </color><color=red>720 + 370 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setelah meledak, ia tidak menghilang melainkan kecepatannya berlipat ganda. Saat mati, berpeluang memunculkan zombi kotak musik baru.</color></color></size>"
+        },
+        {
+            "theZombieType": 31,
+            "name": "Zombi Mobil Basket",
+            "introduce": "<color=#3D1400>Tidak ada yang tahu bagaimana Zombi Mobil Basket mengatur kekuatan lemparannya dengan begitu tepat, yang jelas jika kamu melihatnya, sebaiknya segera tutupi kepalamu.</color>",
+            "info": "<size=14><color=blue>Melemparkan bola basket dengan tepat untuk menyerang tanaman di barisan belakang.\n\n<color=black>Damage: </color><color=red>60/3 detik</color>\n<color=black>Ketahanan: </color><color=red>850</color>\n<color=black>Fitur: </color><color=red>Melemparkan bola basket ke tanaman paling kiri di barisnya. Setelah menghabiskan 25 bola, ia akan maju dan menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 32,
+            "name": "Zombi Pegas",
+            "introduce": "<color=#3D1400>Zombi Pegas suka memantul, dia merasa melompat ke udara adalah hal yang paling mendekati terbang. Tapi apakah ada yang pernah mengingatkannya untuk tidak memakai galah pegas di atas atap?</color>",
+            "info": "<size=14><color=blue>Bisa melompati lini pertahananmu.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Melompati tanaman, bisa dihentikan oleh Kacang Kenari Tinggi. Galah pegas dapat ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 33,
+            "name": "Zombi Tangga",
+            "introduce": "<color=#3D1400>Zombi Tangga membaca di internet bahwa selama membawa tangga dan berpura-pura menjadi pekerja, dia bisa masuk ke mana saja. Jadi dia membeli tangga dan memakai seragam kerja.\n\"Apa tidak ada yang memberitahunya kalau kulit zombinya sangat mencolok?\" kata Penembak Kacang.</color>",
+            "info": "<size=14><color=blue>Tangga memungkinkan zombi lain melewati tanaman.\n\n<color=black>Ketahanan: </color><color=red>720 + 720 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Menaruh tangga pada tanaman pertahanan agar zombi lain bisa lewat. Tangga dapat ditarik oleh Jamur Magnet dan hancur oleh Damage ledakan.</color></color></size>"
+        },
+        {
+            "theZombieType": 34,
+            "name": "Zombi Lompat Semangka",
+            "introduce": "<color=#3D1400>\"Bom tidak mungkin jatuh di lubang yang sama dua kali!\" kata Zombi Lompat Semangka sambil membetulkan topi kulit semangkanya. Tapi tidak ada zombi yang memberitahunya bahwa warna merah-hijau membuatnya sangat mencolok.</color>",
+            "info": "<size=14><color=blue>Menggunakan galah semangka elastis untuk melompat jarak jauh.\n\n<color=black>Ketahanan: </color><color=red>720 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setelah bersiap selama 5 detik, ia melompat sejauh 4 kotak (tidak terhalang tanaman tinggi). Hanya bisa dilakukan sekali.</color></color></size>"
+        },
+        {
+            "theZombieType": 35,
+            "name": "Raksasa",
+            "introduce": "<color=#3D1400>Seperti hewan besar lainnya, tubuh raksasanya dibayar dengan kecerdasan yang rendah. Otak? Tanaman? Dia tidak mengerti dan tidak peduli, dia hanya tahu cara maju dan akan terus maju.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa yang sangat besar ini bisa menghancurkan tanamanmu!\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Melemparkan Zombi Kecil saat nyawanya tinggal setengah. Serangan pukulannya menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 36,
+            "name": "Raksasa Mata Merah",
+            "introduce": "<color=#3D1400>Meskipun Raksasa Mata Merah sangat menakutkan di medan perang, dia punya rahasia kecil: matanya merah hanya karena dia kurang tidur setiap hari.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa yang sangat marah dan bisa menghancurkan tanamanmu!\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Memiliki semua karakteristik Zombi Raksasa biasa namun jauh lebih kuat.</color></color></size>"
+        },
+        {
+            "theZombieType": 37,
+            "name": "Zombi Bocil",
+            "introduce": "<color=#3D1400>Zombi Bocil secara alami suka masuk ke ruang-ruang sempit karena itu membuatnya merasa aman. Jadi, jangan heran di mana pun kamu melihatnya.</color>",
+            "info": "<size=14><color=blue>Bersembunyi di punggung Raksasa dan akan dilemparkan ke tengah pertahananmu!\n\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Fitur: </color><color=red>Zombi kecil yang sedang melayang di udara bisa dihempaskan oleh kemampuan tanaman payung.</color></color></size>"
+        },
+        {
+            "theZombieType": 38,
+            "name": "Raksasa Robot",
+            "introduce": "<color=#3D1400>Penemuan terbaru Dr. Edgar. Dia mengklaim mesin ini tidak punya pikiran sehingga lebih damai. Namun, Kacang Kenari yang tergilas olehnya pasti tidak akan setuju dengan pendapat itu.</color>",
+            "info": "<size=14><color=blue>Menggilas tanaman dengan langkah berat dan lambat.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap hipnotis, beku, dan racun. Kehilangan kepala Robotnya tidak akan membuatnya mati. Kepala Robot bisa ditarik Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 39,
+            "name": "Raksasa Robot Mata Merah",
+            "introduce": "<color=#3D1400>Model generasi kedua dengan pelindung paduan logam yang lebih kuat dan struktur baja yang lebih stabil. Lampu LED merah dipasang di matanya agar mudah membedakan tipenya.</color>",
+            "info": "<size=14><color=blue>Versi Raksasa Robot yang jauh lebih tangguh.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Memiliki semua fitur Raksasa Robot dengan ketahanan yang berlipat ganda.</color></color></size>"
+        },
+        {
+            "theZombieType": 40,
+            "name": "Zombi Boling Robot",
+            "introduce": "<color=#3D1400>Menjalankan boling ini sangat merepotkan, harus diisi bensin dan pelumas dulu. Zombi Kecil tidak kuat mengangkatnya, jadi para Raksasa yang harus membantu membawanya.</color>",
+            "info": "<size=14><color=blue>Boling yang menggelinding bertenaga Zombi Kecil dan gravitasi.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Menggelinding cepat dan berpindah baris saat menabrak tanaman. Saat hancur, ia memunculkan bola es atau api serta beberapa zombi kecil.</color></color></size>"
+        },
+        {
+            "theZombieType": 41,
+            "name": "Patung Perak",
+            "introduce": "<color=#3D1400>Zombi yang dilapisi perak murni. Dr. Edgar berkomentar bahwa keberadaan zombi di dalamnya sebenarnya menurunkan nilai perak tersebut.</color>",
+            "info": "<size=14><color=blue>Zombi yang telah berubah menjadi patung perak.\n\n<color=black>Ketahanan: </color><color=red>200</color>\n<color=black>Fitur: </color><color=red>Tidak bisa bergerak atau dipukul mundur. Mati otomatis setelah 15 detik dan menjatuhkan banyak uang.</color></color></size>"
+        },
+        {
+            "theZombieType": 42,
+            "name": "Patung Emas",
+            "introduce": "<color=#3D1400>Zombi berlapis emas ini sangat populer di acara pecah telur emas. Hadiah utamanya adalah seorang zombi, meski belum ada yang berhasil mendapatkannya.</color>",
+            "info": "<size=14><color=blue>Zombi yang telah berubah menjadi patung emas.\n\n<color=black>Ketahanan: </color><color=red>300</color>\n<color=black>Fitur: </color><color=red>Tidak bisa bergerak. Memberikan hadiah uang yang jauh lebih besar daripada patung perak saat hancur.</color></color></size>"
+        },
+        {
+            "theZombieType": 43,
+            "name": "Raksasa Bersenjata",
+            "introduce": "<color=#3D1400>Dia sangat menyukai kostum ksatria di permainan favoritnya, jadi dia memesan pelindung abad pertengahan. Sayangnya setelah dipakai, dia tidak bisa melepasnya lagi.</color>",
+            "info": "<size=14><color=blue>Penantang terakhir yang sangat tangguh.\n\n<color=black>Ketahanan: </color><color=red>8000 + 24000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap hipnotis dan serangan telan. Melemparkan Zombi Boling saat nyawa kritis.</color></color></size>"
+        },
+        {
+            "theZombieType": 44,
+            "name": "Raja Zombi",
+            "introduce": "<color=#3D1400>Dr. George Edgar hanya butuh dua tahun untuk meraih gelar doktor dalam bidang kematian. Dia membangun robot raksasa untuk menguasai dunia.</color>",
+            "info": "<size=14><color=blue>Pemimpin tertinggi para zombi yang mengendalikan mesin perang raksasa.\n\n<color=black>Ketahanan: </color><color=red>45000</color>\n<color=black>Fitur: </color><color=red>Menginjak tanaman, memanggil pasukan zombi, dan mengeluarkan bola api atau es yang mematikan.</color></color></size>"
+        },
+        {
+            "theZombieType": 45,
+            "name": "Zombi Bungi",
+            "introduce": "<color=#3D1400>Zombi Bungi sangat suka petualangan. Lagipula, jika kamu sudah tidak hidup, apa salahnya mencoba kematian sekali lagi?</color>",
+            "info": "<size=14><color=blue>Turun dari langit untuk mencuri tanamanmu.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Mengambil satu tanaman secara acak dari atas langit, terutama tanaman pelindung.</color></color></size>"
+        },
+        {
+            "theZombieType": 46,
+            "name": "Raja Zombi Piala",
+            "introduce": "<color=#3D1400>Wujud gabungan dari Raja Zombi dan Piala kemenangan.</color>",
+            "info": "<size=14><color=blue>Kalahkan dia untuk merebut kembali semuanya!\n\n<color=black>Ketahanan: </color><color=red>45000</color>\n<color=black>Fitur: </color><color=red>Memiliki kemampuan Raja Zombi yang lebih kuat. Dapat menyegel peralatan bantuanmu seperti palu dan sarung tangan.</color></color></size>"
+        },
+        {
+            "theZombieType": 47,
+            "name": "Zombi Yeti",
+            "introduce": "<color=#3D1400>Sangat sedikit informasi tentangnya, selain kegemarannya memakan roti lapis panggang rasa daging sapi.</color>",
+            "info": "<size=14><color=blue>Dikelilingi hawa dingin yang bisa membekukan tanaman di sekitarnya.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Membisukan fungsi tanaman di area 3x3. Akan melarikan diri setelah beberapa saat.</color></color></size>"
+        },
+        {
+            "theZombieType": 48,
+            "name": "Zombi Barongsai",
+            "introduce": "<color=#3D1400>Zombi ini datang mengenakan kostum tarian singa untuk merayakan tahun baru, meski akhirnya selalu diusir oleh para tanaman.</color>",
+            "info": "<size=14><color=blue>Sangat tebal dan tangguh, tapi takut pada ledakan cabai ceri.\n\n<color=black>Ketahanan: </color><color=red>8888 + 8888 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Menerima Damage 15 kali lipat lebih besar dari serangan Cabai Ceri.</color></color></size>"
+        },
+        {
+            "theZombieType": 49,
+            "name": "Zombi Penembak Salju",
+            "introduce": "<color=#3D1400>Dia suka melemparkan bola salju ke segala arah tanpa sadar kapan harus berhenti.</color>",
+            "info": "<size=14><color=blue>Penembak dari dataran salju yang membisukan tanamanmu.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Menembakkan bola salju yang memberikan Damage dan efek bisu pada area 3x3.</color></color></size>"
+        },
+        {
+            "theZombieType": 50,
+            "name": "Zombi Perisai Salju",
+            "introduce": "<color=#3D1400>Mantan prajurit elit yang kini menjadi juara bertahan lomba lempar bola salju. Dia sangat menjaga perisainya agar tidak rusak.</color>",
+            "info": "<size=14><color=blue>Pembawa perisai yang memantulkan peluru lurus kembali ke arah tanaman.\n\n<color=black>Ketahanan: </color><color=red>720 + 2200 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Menggunakan perisai untuk memantulkan peluru menjadi bola salju yang berbahaya bagi tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 51,
+            "name": "Zombi Tombak Salju",
+            "introduce": "<color=#3D1400>Pada Olimpiade Makam Musim Dingin ke-5, Zombi Tombak Salju tampil sangat memukau. Dia berencana menggunakan hadiah uangnya untuk membeli kereta luncur baru bagi saudara-saudaranya dan memesan pijat kaki mewah untuk memulihkan Damage akibat duri tanah.</color>",
+            "info": "<size=14><color=blue>Pelempar tombak dari dataran salju yang melemparkan tombak es dengan efek bisu!\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Tingkat anti-dingin 1. Memiliki karakteristik Zombi Trisula. Memberikan efek bisu selama 5 detik jika terkena tombak.</color></color></size>"
+        },
+        {
+            "theZombieType": 52,
+            "name": "Zombi Kipli Portal",
+            "introduce": "<color=#3D1400>Gerbang apa yang dipegang zombi ini? Tidak ada zombi yang tahu, tapi ketika melihat teman-teman lama mereka keluar dari gerbang tersebut, mereka sangat senang untuk bertanya apakah ada otak segar di dalamnya.</color>",
+            "info": "<size=14><color=blue>Kekuatan dari luar dunia yang melampaui waktu dan ruang.\n\n<color=black>Damage: </color><color=red>20</color>\n<color=black>Ketahanan: </color><color=red>270 + 200 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Menembakkan kacang dimensi setiap 1.5 detik. Setiap 6 detik, memanggil satu zombi acak dari gerbang dimensi.</color></color></size>"
+        },
+        {
+            "theZombieType": 53,
+            "name": "Zombi Piring Terbang",
+            "introduce": "<color=#3D1400>Setiap kali akan lepas landas, piring terbang ini butuh setengah jam untuk membersihkan salju dan es. Sang pilot mengeluh karena harus menghabiskan banyak bahan bakar hanya untuk menerbangkan gumpalan es raksasa ini.</color>",
+            "info": "<size=14><color=blue>Menciptakan salju saat bergerak, lalu mundur dan memanggil tim Yeti.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap efek daun semanggi. Membisukan tanaman di bawahnya. Saat berhenti, ia akan mundur dan memanggil Zombi Perisai, Penembak, dan Tombak Salju.</color></color></size>"
+        },
+        {
+            "theZombieType": 54,
+            "name": "Kayu Latihan",
+            "introduce": "<color=#3D1400></color>",
+            "info": "<size=14><color=blue>Batang kayu yang digunakan untuk menguji Damage serangan.\n\n<color=black>Ketahanan: </color><color=red>10000</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap segala Damage dan pemusnahan instan. Menampilkan total Damage dan rata-rata Damage per detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 55,
+            "name": "Zombi Blok Es",
+            "introduce": "<color=#3D1400>Di dataran salju yang dingin, menjaga suhu tubuh sangat penting. Zombi ini dengan bangga merekomendasikan blok es sebagai bahan isolasi suhu, tapi tidak ada yang mau mencoba metodenya.</color>",
+            "info": "<size=14><color=blue>Zombi suku Yeti yang menggunakan balok es sebagai helm.\n\n<color=black>Ketahanan: </color><color=red>500 + 370 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Tingkat anti-dingin 1. Memiliki pertahanan kepala yang cukup kuat.</color></color></size>"
+        },
+        {
+            "theZombieType": 56,
+            "name": "Zombi Binatang Salju",
+            "introduce": "<color=#3D1400>Penelitian tentang klasifikasi mahluk ini belum membuahkan hasil. Dr. Edgar memberikan cara mudah untuk membedakannya: \"Yang terlihat sedikit lebih pintar adalah Binatang Salju.\"</color>",
+            "info": "<size=14><color=blue>Mahluk salju yang muncul dari dalam balok es.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Muncul saat zombi menghancurkan es tanpa zombi tanaman di dalamnya. Bergerak sangat lambat dan menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 57,
+            "name": "Raja Binatang Salju",
+            "introduce": "<color=#3D1400>Dia memiliki kekuatan, ekor yang berat, dan kecerdasan tinggi. Namun yang membuatnya menjadi pemimpin adalah kemampuan lompatannya yang luar biasa.</color>",
+            "info": "<size=14><color=blue>Raja dari segala mahluk di dataran salju.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Bergerak lambat dan menggilas tanaman. Saat muncul, ia melompat sejauh 2 kotak tanpa memedulikan rintangan.</color></color></size>"
+        },
+        {
+            "theZombieType": 58,
+            "name": "Zombi Penambang Obsidien",
+            "introduce": "<color=#3D1400>Dia hanya ingin menambang cukup banyak obsidien untuk membuat gerbang dan pergi dari tempat ini. Sayangnya, dia tidak punya alat pemantik api untuk menyalakannya.</color>",
+            "info": "<size=14><color=blue>Menggunakan beliung dengan berbagai material untuk menghancurkan pertahanan depanmu.\n\n<color=black>Ketahanan: </color><color=red>720 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Menghancurkan tanaman pertahanan secara instan setelah progres penggalian mencapai 100%. Jenis beliung (Emas, Besi, Berlian) menentukan kecepatan gali.</color></color></size>"
+        },
+        {
+            "theZombieType": 59,
+            "name": "Zombi Lumba-lumba Koran",
+            "introduce": "<color=#3D1400>\"Dulunya mimpinya adalah menjadi putri duyung, tapi dokter bedahnya melakukan kesalahan fatal saat menyatukan tubuh bagian atas dan bawahnya.\"</color>",
+            "info": "<size=14><color=blue>Sangat marah jika bacaannya diganggu... lalu pulang untuk mengambil koran baru.\n\n<color=black>Ketahanan: </color><color=red>720 + 720 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Kecepatan meningkat pesat setelah koran hancur. Ia akan berbalik arah keluar arena, lalu masuk kembali dengan koran baru dan nyawa penuh.</color></color></size>"
+        },
+        {
+            "theZombieType": 60,
+            "name": "Peluru Guntur",
+            "introduce": "<color=#3D1400></color>",
+            "info": "<size=14><color=blue>Proyektil meriam yang bisa meledak.\n\n<color=black>Fitur: </color><color=red>Menyebabkan ledakan saat mengenai sasaran. Dapat dihancurkan sebelum meledak atau dihempaskan oleh daun semanggi.</color></color></size>"
+        },
+        {
+            "theZombieType": 61,
+            "name": "Zombi Lumba-lumba Rugbi",
+            "introduce": "<color=#3D1400>Zombi ini merasa sangat lincah di lapangan rugbi. Tunggu, jangan benar-benar membanjiri lapangan dengan air!</color>",
+            "info": "<size=14><color=blue>Bergerak lincah di lapangan untuk memamerkan helm favoritnya.\n\n<color=black>Ketahanan: </color><color=red>720 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Mengabaikan rintangan tanaman selama memakai helm. Akan memulihkan nyawa dan memakai helm baru setiap kali mencapai ujung baris.</color></color></size>"
+        },
+        {
+            "theZombieType": 62,
+            "name": "Anak Binatang Salju",
+            "introduce": "<color=#3D1400>Meskipun kecil, ia punya cita-cita besar untuk menguasai dataran salju. Sayangnya, karena kegemarannya berguling-guling, ia sering berakhir celaka di barisan tanaman.</color>",
+            "info": "<size=14><color=blue>Bayi mahluk salju yang sangat rapuh namun berbahaya.\n\n<color=black>Ketahanan: </color><color=red>300</color>\n<color=black>Fitur: </color><color=red>Menggelinding maju dan meledak saat menabrak tanaman. Memiliki peluang 1/3 untuk menghindari serangan.</color></color></size>"
+        },
+        {
+            "theZombieType": 63,
+            "name": "Zombi Bungi Tamak",
+            "introduce": "<color=#3D1400>Keinginannya akan harta karun membuatnya berani melawan rasa takut akan ketinggian. Belakangan ini, dia sangat terobsesi dengan kotak misteri.</color>",
+            "info": "<size=14><color=blue>Zombi bungi yang pendendam, akan memanggil Raksasa setelah diusir.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Menjatuhkan 200 matahari dan uang saat mati. Jika diusir tanaman payung, ia akan menjatuhkan Raksasa Kotak Misteri di barisan belakang.</color></color></size>"
+        },
+        {
+            "theZombieType": 64,
+            "name": "Zombi Raja Dansa Pantai",
+            "introduce": "<color=#3D1400>Dia meminjam peralatan panggung Raja Dansa Putih untuk pertunjukan pertamanya. Dia memerintahkan asistennya untuk tidak berdiri diam seperti patung.</color>",
+            "info": "<size=14><color=blue>Memanggil patung bayangan untuk menemaninya berdansa.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Masuk dengan gaya berjalan bulan, lalu memanggil 4 patung batu yang akan berubah menjadi zombi dansa setelah 15 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 65,
+            "name": "Patung Dansa",
+            "introduce": "<color=#3D1400>Ini bukan peninggalan peradaban kuno, melainkan murid dansa yang berlatih terlalu lama di pantai hingga tertutup pasir laut.</color>",
+            "info": "<size=14><color=blue>Patung aneh yang mengiringi Raja Dansa Pantai.\n\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Tidak bergerak. Setelah 15 detik, patung akan pecah dan memunculkan Zombi Raja Dansa Pantai.</color></color></size>"
+        },
+        {
+            "theZombieType": 66,
+            "name": "Kapten Rugbi Pembawa Bendera",
+            "introduce": "<color=#3D1400>Dia yakin dirinya lebih kuat dari Jenderal Rugbi Hitam karena dia bisa berguling. Kepercayaan diri ini membuatnya berlari lebih cepat sekarang.</color>",
+            "info": "<size=14><color=blue>Pemain rugbi elit yang melakukan gulingan untuk menembus pertahanan.\n\n<color=black>Ketahanan: </color><color=red>720 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Akan berguling sejauh 2 kotak dan mengabaikan tanaman saat pertama kali bertabrakan.</color></color></size>"
+        },
+        {
+            "theZombieType": 67,
+            "name": "Anak Binatang Pasir",
+            "introduce": "<color=#3D1400>Dulunya dia adalah anak binatang salju, tapi karena terlalu sering bermain di pantai, tubuhnya tertutup pasir. Dia sangat bangga bisa bersembunyi di balik pasirnya.</color>",
+            "info": "<size=14><color=blue>Bergerak seperti semak berduri, tubuh kecilnya sulit dibidik.\n\n<color=black>Ketahanan: </color><color=red>300</color>\n<color=black>Fitur: </color><color=red>Berpeluang 1/3 menghindari serangan. Memiliki 2/3 peluang untuk menembus tanaman tanpa bertabrakan.</color></color></size>"
+        },
+        {
+            "theZombieType": 68,
+            "name": "Zombi Penunggang Ayam",
+            "introduce": "<color=#3D1400>Catatan petualang menyatakan: Ayam adalah mahluk paling berbahaya. Jika melihat ayam berlari cepat ke arahmu, berdoalah teman setimmu berlari lebih lambat darimu.</color>",
+            "info": "<size=14><color=blue>Menunggangi ayam yang berlari sangat cepat untuk memakan tanaman.\n\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Kecepatan gerak dan makan yang sangat luar biasa. Zombi Kecil akan muncul saat ayamnya mati.</color></color></size>"
+        },
+        {
+            "theZombieType": 69,
+            "name": "Zombi Penunggang Kuda",
+            "introduce": "<color=#3D1400>Peter bergabung dengan pasukan kavaleri Dr. Edgar. Tidak ada yang bisa menghentikannya di medan perang, meskipun dia sebenarnya adalah si kuda zombi itu sendiri.</color>",
+            "info": "<size=14><color=blue>Menerjang pertahanan tanaman dengan kuda perang.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Kecepatan sangat tinggi dan kebal terhadap efek pukul mundur. Melakukan tabrakan yang menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 70,
+            "name": "Komandan Kipli Rugbi Kuda",
+            "introduce": "<color=#3D1400>Dia adalah bintang liga rugbi zombi. Menggunakan pelontar kacang yang dimodifikasi, dia menghancurkan siapapun yang menghalangi jalannya, terutama para wasit.</color>",
+            "info": "<size=14><color=blue>Maju perlahan dengan kuda besi, dan menjadi sangat agresif saat terdesak.\n\n<color=black>Ketahanan: </color><color=red>1800 + 1400 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Menembakkan 4 kacang besi setiap 1.5 detik. Setelah kudanya mati, ia akan turun dan menembak jauh lebih cepat (setiap 0.1 detik).</color></color></size>"
+        },
+        {
+            "theZombieType": 71,
+            "name": "Zombi Ayam Mekanik",
+            "introduce": "<color=#3D1400>Sulit dipercaya kapal sekecil ini punya masalah kebocoran serius. Inilah akibat mencari harga murah daripada memesan di Perusahaan Ikan Mesin. Tapi tenang, pembuatnya punya solusi: mengubah kapal ini menjadi kendaraan terbang rendah! Konsumsi bahan bakarnya memang tinggi, tapi untungnya mereka juga menjual bahan bakar berkualitas.</color>",
+            "info": "<size=14><color=blue>Mengendarai kapal cepat di atas air, lalu melompat keluar setelah menabrak tanaman.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Kecepatan sangat tinggi. Setelah menabrak dan menggilas tanaman, kapal akan meledak dan melontarkan pengemudinya (Zombi Kecil) ke daratan terdekat.</color></color></size>"
+        },
+        {
+            "theZombieType": 72,
+            "name": "Zombi Tangga Kutukan",
+            "introduce": "<color=#3D1400>\"Si kuat tidak pernah mengeluh soal lingkungan, dan aku tidak bergantung pada tangga!\" Zombi Tangga Kutukan memegang tangganya dengan kokoh. \"Tangga di tanganku adalah pertahanan, dan tangga yang diletakkan adalah alat penyerap Damage!\" Setelah berkata begitu, dia meletakkan tangga dan mendengarkan suara hancurnya tanaman pertahanan.</color>",
+            "info": "<size=14><color=blue>Zombi Tangga yang membawa tangga terkutuk non-magnetik.\n\n<color=black>Ketahanan: </color><color=red>720 + 1350 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Setelah tangga diletakkan, semua Damage yang diterima pembawa tangga akan dialihkan ke tanaman yang ditempati tangga tersebut. Tangga ini tidak bisa ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 73,
+            "name": "Zombi Teratai Merah",
+            "introduce": "<color=#3D1400>Tidak ada yang tahu kenapa dia muncul di tempat zombi berkumpul atau bagaimana dia memanggil pasukan zombi terus-menerus. Ada yang bilang dia adalah nisan dari Teratai Merah, ada yang bilang dia pengkhianat tanaman. Dia memendam semuanya sendirian, mungkin dia pernah menjelaskan, tapi tidak ada yang mengerti.</color>",
+            "info": "<size=14><color=blue>Bunga jahat yang memanggil zombi dan bisa menggantikan posisi tanaman seperti nisan.\n\n<color=black>Ketahanan: </color><color=red>300</color>\n<color=black>Fitur: </color><color=red>Muncul di 5 kolom paling kanan. Menyerap peluru tanaman (tiap peluru melukainya 30 poin). Memanggil satu Zombi Tanaman setiap 15 detik. Jika diberi pupuk, ia akan menghilang dan menjatuhkan kartu hadiah.</color></color></size>"
+        },
+        {
+            "theZombieType": 74,
+            "name": "Zombi Cabai Hipnotis",
+            "introduce": "<color=#3D1400>Pemenang kontes kecantikan zombi terhipnotis. Baik juri tanaman maupun zombi memujinya karena tampil sangat \"mempesona\" dan \"pedas\". Kecuali fakta bahwa beberapa peserta lain menghilang secara misterius, ini adalah kontes yang sempurna.</color>",
+            "info": "<size=14><color=blue>Meledakkan diri untuk membakar zombi lawan di baris yang sama.\n\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Setelah beberapa saat muncul, ia akan meledak dan mengeluarkan api satu baris yang memberikan 1800 Damage hanya kepada zombi di pihak tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 75,
+            "name": "Zombi Penambang Cabai Hipnotis",
+            "introduce": "<color=#3D1400>Ahli dalam serangan mendadak dari belakang. Dia menggunakan beliung sihirnya untuk mengubah tanaman menjadi zombi. Namun zombi-zombi ini adalah pembela keadilan yang berbalik menyerang rekan mereka sendiri tanpa menyadari bahwa mereka juga sedang diserang balik.</color>",
+            "info": "<size=14><color=blue>Mengubah tanaman menjadi zombi pihak kita dengan beliung, lalu meledakkan diri.\n\n<color=black>Ketahanan: </color><color=red>1500</color>\n<color=black>Fitur: </color><color=red>Selama beliung tidak ditarik, serangannya mengubah tanaman biasa menjadi Zombi Tanaman secara acak untuk pihak kita. Jika berhasil menggali sampai ujung belakang, ia akan meledak seperti Zombi Cabai Terhipnotis.</color></color></size>"
+        },
+        {
+            "theZombieType": 76,
+            "name": "Raksasa Trisula",
+            "introduce": "<color=#3D1400>Zombi dengan kadar lemak tinggi lebih mudah mengapung, tapi Raksasa Trisula yakin ini adalah berkat dari Dewa Laut. Meski dengan ukuran tubuhnya, berjalan langsung di dasar air pun sepertinya bukan hal sulit baginya.</color>",
+            "info": "<size=14><color=blue>Raksasa air yang melemparkan trisula, bukan Zombi Kecil.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap efek tenggelam di air. Saat nyawa di bawah 50%, ia melemparkan 4 trisula secara bersamaan. Trisula memberikan Damage sebesar 20% dari total nyawa tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 77,
+            "name": "Zombi Juara Galah",
+            "introduce": "<color=#3D1400>Kekuatan ledakan adalah kunci kemenangannya. Semakin cepat dia berlari, semakin jauh dia melompat. Sayangnya dia lupa bahwa lompat galah itu menguji ketinggian, bukan jarak jauh.</color>",
+            "info": "<size=14><color=blue>Memiliki kemampuan lompat jauh yang luar biasa setelah berlari kencang.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Melompati 3 kotak sekaligus saat bertemu tanaman pertama. Jika sudah berlari lebih dari 8 detik, lompatannya tidak bisa dihentikan oleh tanaman tinggi.</color></color></size>"
+        },
+        {
+            "theZombieType": 78,
+            "name": "Zombi Rugbi Tanpa Warna",
+            "introduce": "<color=#3D1400>Kariernya tidak pernah sekalipun mengalami kekalahan. Rahasianya sederhana: dia hanya perlu mengganti seragam timnya menjadi seragam tim lawan saat lawannya hampir menang.</color>",
+            "info": "<size=14><color=blue>Akan berubah warna seragam tergantung pada intensitas serangan yang diterima.\n\n<color=black>Ketahanan: </color><color=red>270 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setelah 15 detik, jika helm masih ada, ia menjadi Rugbi Merah. Jika tidak, menjadi Rugbi Kuning yang menembus tanaman. Jika mati dalam 3 detik awal, ia berubah menjadi Rugbi Hitam yang tangguh.</color></color></size>"
+        },
+        {
+            "theZombieType": 79,
+            "name": "Zombi Rugbi Kuning",
+            "introduce": "<color=#3D1400>Daripada menerobos pertahanan secara paksa, dia lebih suka menggunakan kelincahannya untuk langsung melewati lawan. Yang membuatnya bingung adalah meski bisa melewati banyak pertahanan, dia tetap tidak bisa melewati mesin pemotong rumput yang tampak biasa itu.</color>",
+            "info": "<size=14><color=blue>Bergerak maju dengan langkah lincah untuk menghindari tanaman.\n\n<color=black>Ketahanan: </color><color=red>270 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Mengabaikan rintangan tanaman (melewatinya tanpa memakan atau berhenti). Helm dapat ditarik oleh Jamur Magnet.</color></color></size>"
+        },
+        {
+            "theZombieType": 100,
+            "name": "Zombi Penembak Kacang",
+            "introduce": "<color=#3D1400>Kemampuan bertempur jarak jauhnya membuat tanaman ketakutan, tapi di sisi zombi pun terjadi kepanikan. Zombi yang bertarung di depannya selalu merasa cemas kalau-kalau mereka akan tertembak dari belakang oleh kawan sendiri.</color>",
+            "info": "<size=14><color=blue>Menembakkan kacang untuk menyerang tanamanmu.\n\n<color=black>Damage Peluru: </color><color=red>20</color>\n<color=black>Ketahanan: </color><color=red>270</color>\n<color=black>Fitur: </color><color=red>Menembakkan satu butir kacang setiap 1.5 detik secara otomatis ke arah tanaman di depannya.</color></color></size>"
+        },
+        {
+            "theZombieType": 101,
+            "name": "Zombi Penembak Ceri",
+            "introduce": "<color=#3D1400>Zombi Penembak Ceri adalah siswa SMA berusia 17 tahun dengan kepala tanaman. Buah favoritnya adalah ceri. Karena lahir di keluarga religius yang terpandang, para zombi menjulukinya \"Hierophant Hijau.\"</color>",
+            "info": "<size=14><color=blue>Menembakkan peluru ceri merah muda untuk menyerang tanamanmu.\n\n<color=black>Damage Peluru: </color><color=red>40</color>\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Menembakkan satu butir ceri setiap 1.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 102,
+            "name": "Zombi Penembak Super Ceri",
+            "introduce": "<color=#3D1400>Zombi ini baru saja mendengarkan lagu \"Cherry Bomb\" dari The Runaways, mungkin itulah alasan dia begitu bersemangat. Hanya saja tidak ada yang tahu bagaimana dia belajar mengeluarkan kembang api dari mulutnya.</color>",
+            "info": "<size=14><color=blue>Menembakkan ceri peledak untuk menghancurkan tanamanmu.\n\n<color=black>Damage Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Setiap 10 detik menembakkan ceri peledak. Jika terhipnotis, menembak setiap 6 detik. Ledakan ceri memiliki jangkauan area (splash) berbentuk salib.</color></color></size>"
+        },
+        {
+            "theZombieType": 103,
+            "name": "Zombi Kacang",
+            "introduce": "<color=#3D1400>Zombi Kacang tidak memiliki lubang peluru di kepalanya setelah diserang tanaman, melainkan bekas gigitan. Dia berkata: \"Mungkin teman-teman seperjuanganku sedang lapar.\"</color>",
+            "info": "<size=14><color=blue>Hanyalah sebuah kacang pelindung yang bisa berjalan.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Berfungsi sebagai perisai berjalan bagi zombi di belakangnya.</color></color></size>"
+        },
+        {
+            "theZombieType": 104,
+            "name": "Zombi Ceri Baca Koran",
+            "introduce": "<color=#3D1400>Buah favoritnya adalah ceri, bahkan korannya pun rasa ceri. Korannya adalah satu-satunya hal yang menahan amarahnya. Dia sering memakan ceri saat membaca, dan setelah korannya hancur, dia akan memuntahkan semua ceri peledak itu.</color>",
+            "info": "<size=14><color=blue>Sangat marah karena bacaannya terganggu, memuntahkan banyak ceri peledak.\n\n<color=black>Damage Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>1500 + 200 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Setelah kehilangan koran, ia menembakkan peluru ceri peledak setiap 0.75 detik dengan efek ledakan area.</color></color></size>"
+        },
+        {
+            "theZombieType": 105,
+            "name": "Zombi Misteri",
+            "introduce": "<color=#3D1400>???</color>",
+            "info": "<size=14><color=blue>Apa yang ada di dalam kotak? Tidak ada yang tahu.\n\n<color=black>Ketahanan: </color><color=red>270 + 370 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Saat pelindungnya hancur atau ia mati, ia akan digantikan oleh satu zombi acak dengan sisa nyawa yang bervariasi antara 20% hingga 120%.</color></color></size>"
+        },
+        {
+            "theZombieType": 106,
+            "name": "Zombi Kacang Besi",
+            "introduce": "<color=#3D1400>Kenapa kepalanya sekeras besi? Katanya makan kenari bagus untuk otak, tapi dia tidak sadar kenari yang dia makan mengandung kadar besi terlalu tinggi. Sekarang dia menguasai jurus kepala besi.</color>",
+            "info": "<size=14><color=blue>Apakah kacang besi juga bisa bergerak?\n\n<color=black>Ketahanan: </color><color=red>270 + 2200 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Pelindung besinya dapat ditarik oleh Jamur Magnet yang akan langsung membunuhnya. Menjatuhkan ember besi saat mati.</color></color></size>"
+        },
+        {
+            "theZombieType": 107,
+            "name": "Zombi Kacang Ceri",
+            "introduce": "<color=#3D1400>Lelaki sejati tidak pernah melihat ke belakang saat ada ledakan. Setidaknya Zombi Kacang Ceri tidak pernah melihat ke belakang karena dia biasanya menahan bom langsung dengan wajahnya.</color>",
+            "info": "<size=14><color=blue>Sudah terbiasa memakan ceri yang meledak-ledak.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Menerima hanya setengah Damage dari segala jenis ledakan ceri. Kebal terhadap efek beku dari Ceri Es saat mati.</color></color></size>"
+        },
+        {
+            "theZombieType": 108,
+            "name": "Zombi Kipli Kacang Besi",
+            "introduce": "<color=#3D1400>Zombi ini meramal nasibnya tahun lalu dan mendapatkan kartu \"The Emperor\". Sejak saat itu dia menyadari bisa menembakkan peluru besi sesuka hati.</color>",
+            "info": "<size=14><color=blue>Menembakkan peluru kacang besi dengan Damage tinggi.\n\n<color=black>Damage Peluru: </color><color=red>80</color>\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Menembakkan kacang besi setiap 1.5 detik yang dapat memukul mundur zombi yang terhipnotis. Menjatuhkan ember saat mati.</color></color></size>"
+        },
+        {
+            "theZombieType": 109,
+            "name": "Zombi Rugbi Kacang Tinggi",
+            "introduce": "<color=#3D1400>Awalnya dia hanya zombi rugbi biasa, sampai suatu hari dia menabrak kacang yang sedang diberi pupuk. \"Aku juga tidak tahu kenapa benda ini tumbuh di kepalaku, rasanya sesak sekali...\" keluhnya.</color>",
+            "info": "<size=14><color=blue>Zombi Rugbi yang sangat tangguh dengan pertahanan kacang tinggi.\n\n<color=black>Ketahanan: </color><color=red>270 + 4400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Mati seketika jika helmnya ditarik oleh Jamur Magnet. Menjatuhkan helm rugbi saat mati karena serangan.</color></color></size>"
+        },
+        {
+            "theZombieType": 110,
+            "name": "Zombi Misteri Emas",
+            "introduce": "<color=#3D1400>??!</color>",
+            "info": "<size=14><color=blue>Kotak misteri berwarna emas, mungkinkah isinya lebih misterius?\n\n<color=black>Ketahanan: </color><color=red>270 + 720 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Saat pelindung hancur, ia memanggil satu zombi acak dengan nyawa penuh. Memiliki peluang kecil untuk mengeluarkan status tambahan yang acak.</color></color></size>"
+        },
+        {
+            "theZombieType": 111,
+            "name": "Zombi Kacang Tinggi Es",
+            "introduce": "<color=#3D1400>Banyak teori tentang kepalanya yang membeku, ada yang bilang dia ingin mengisolasi diri dari dunia yang kejam. Namun sebenarnya penutup kepala ini muncul setelah dia memakan jamur biru tertentu.</color>",
+            "info": "<size=14><color=blue>Tidak takut dingin, namun api cabai adalah kelemahannya.\n\n<color=black>Ketahanan: </color><color=red>270 + 2200 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Tingkat anti-dingin 1. Kebal efek Jamur Es. Namun, terkena Cabai akan memberikan Damage murni yang besar.</color></color></size>"
+        },
+        {
+            "theZombieType": 112,
+            "name": "Zombi Basket Peledak",
+            "introduce": "<color=#3D1400>Sempurna, sekarang menutup kepala pun tidak akan berguna. Sebaiknya kau lari sebelum dia kehabisan bola basketnya.</color>",
+            "info": "<size=14><color=blue>Melemparkan ceri peledak untuk menghancurkan pertahananmu!\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Melemparkan 5 bola basket ke tanaman paling kiri, diikuti 20 ceri peledak. Setelah amunisi habis, ia akan maju dan menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 113,
+            "name": "Ksatria Lumba Penembak",
+            "introduce": "<color=#3D1400>\"Apa bedanya kamu dengan penunggang lumba-lumba putih?\" Dia selalu menjawab, \"Aku lebih suka bermain bumerang.\"</color>",
+            "info": "<size=14><color=blue>Menunggangi paus merah melewati tiga tanaman sambil menembak.\n\n<color=black>Damage Peluru: </color><color=red>20</color>\n<color=black>Ketahanan: </color><color=red>720</color>\n<color=black>Fitur: </color><color=red>Memiliki kemampuan Ksatria Paus. Menembakkan satu kacang setiap 0.75 detik. Bergerak sangat cepat saat menunggang paus.</color></color></size>"
+        },
+        {
+            "theZombieType": 114,
+            "name": "Zombi Kipli Pintu Ember",
+            "introduce": "<color=#3D1400>Memakai topi besi dan membawa pintu baja kustom. Dia sangat percaya diri bisa mengalahkan tanaman di depannya—hanya sebuah tanaman pemakan yang tampak biasa.</color>",
+            "info": "<size=14><color=blue>Zombi penembak kacang yang dipersenjatai lengkap dari atas sampai bawah.\n\n<color=black>Ketahanan: </color><color=red>1350 + 1100 (Tipe 1) + 1100 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Menembakkan kacang besi setiap 1.5 detik yang dapat memukul mundur zombi terhipnotis.</color></color></size>"
+        },
+        {
+            "theZombieType": 115,
+            "name": "Zombi Labu Geprek",
+            "introduce": "<color=#3D1400>Zombi Labu Geprek selalu menyerbu ke depan untuk menindih tanaman. Zombi lain terharu melihat pengorbanannya, padahal dia hanya fans berat Labu Kucing dan ingin meniru gayanya menindih lawan.</color>",
+            "info": "<size=14><color=blue>Bisa menindih dan menghancurkan tanaman di sekitarnya!\n\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Akan melompat dan menindih tanaman terdekat lalu mati. Bisa berubah menjadi Zombi Labu Api jika terkena efek cabai zombi.</color></color></size>"
+        },
+        {
+            "theZombieType": 116,
+            "name": "Zombi Labu Api",
+            "introduce": "<color=#3D1400>Dia adalah zombi yang sangat tidak sabaran. Hal pertama yang dia lakukan saat muncul adalah menabrak zombi lain! Sayangnya kepalanya jauh lebih tidak sabaran daripada tubuhnya.</color>",
+            "info": "<size=14><color=blue>Menindih tanaman sekitar dan melepaskan ledakan api cabai zombi!\n\n<color=black>Ketahanan: </color><color=red>1500</color>\n<color=black>Fitur: </color><color=red>Zombi rahasia. Menindih tanaman sekitar dan memicu efek Cabai Zombi yang menghanguskan seluruh baris tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 117,
+            "name": "Zombi Cabai",
+            "introduce": "<color=#3D1400>Zombi Cabai sangat ingin mengobrol dengan zombi lain, tapi tidak ada yang mau bicara dengan si pemarah yang bisa meledak kapan saja ini.</color>",
+            "info": "<size=14><color=blue>Melepaskan api untuk menghanguskan seluruh baris tanaman setelah beberapa saat!\n\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Berpeluang memicu efek Cabai Zombi yang menghancurkan tanaman di barisnya secara instan (kecuali zombi terhipnotis).</color></color></size>"
+        },
+        {
+            "theZombieType": 118,
+            "name": "Zombi Rugbi Kipli Mesin",
+            "introduce": "<color=#3D1400>Setelah lari pagi, dia pulang untuk minum elektrolit kacang. Hal ini membuat zombi di belakangnya menderita karena harus menerima semburan kacang di wajah mereka.</color>",
+            "info": "<size=14><color=blue>Menembakkan kacang dalam jumlah besar dengan sangat cepat!\n\n<color=black>Damage: </color><color=red>20</color>\n<color=black>Ketahanan: </color><color=red>270 + 1400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Menembakkan satu butir kacang setiap 0.1 detik secara beruntun.</color></color></size>"
+        },
+        {
+            "theZombieType": 119,
+            "name": "Zombi Balon Kipli Besi",
+            "introduce": "<color=#3D1400>Dia mencoba membuktikan dirinya zombi veteran lewat foto grup, tapi zombi lain bertanya: \"Lalu kamu yang mana?\". Dia sendiri bingung melihat foto hitam putih itu.</color>",
+            "info": "<size=14><color=blue>Zombi penembak kacang besi yang dilengkapi dengan perangkat balon besi.\n\n<color=black>Ketahanan: </color><color=red>1350 + 500 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Memiliki karakteristik Zombi Balon namun kebal terhadap Daun Semanggi. Menembakkan kacang besi setiap 1.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 120,
+            "name": "Zombi Jamur Nuklir",
+            "introduce": "<color=#3D1400>Para zombi sudah muak diledakkan oleh Jamur Nuklir. Sekarang mereka membuat senjata nuklir sendiri agar tanaman merasakan hal yang sama. Meski tubuh zombi hanya kuat menahan sepertiga kekuatannya, itu sudah lebih dari cukup.</color>",
+            "info": "<size=14><color=blue>Meledak setelah beberapa saat dan menghancurkan tanaman dalam area luas.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Meledakkan diri setelah masuk ke arena, memberikan 1800 Damage pada tanaman dalam area 3x3 kotak.</color></color></size>"
+        },
+        {
+            "theZombieType": 121,
+            "name": "Raksasa Misteri",
+            "introduce": "<color=#3D1400>Tidak mudah menemukan kantong kertas yang pas untuk kepala raksasa, apalagi mereka sulit memegang benda kecil dengan hati-hati. Namun bagi seorang raksasa, kekuatan adalah hal biasa, sementara presisi adalah simbol elit. Sampai suatu hari, mereka belajar meminta bantuan zombi kecil.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa yang mengenakan penutup kepala kotak misteri. Siapa yang tahu apa di baliknya?\n\n<color=black>Ketahanan: </color><color=red>3000 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Menghancurkan tanaman di dekatnya. Saat kotak misteri pecah, zombi raksasa acak akan muncul menggantikannya.</color></color></size>"
+        },
+        {
+            "theZombieType": 122,
+            "name": "Raksasa Mata Biru",
+            "introduce": "<color=#3D1400>Dia selalu menyerbu paling depan demi otak segar. Berkat rekor tempurnya yang luar biasa, Dr. Zomboss memberinya Medali Nisan Kelas Dua. Sayangnya sebagai prajurit hebat, dia tidak pernah ikut pawai karena langkahnya selalu terlalu cepat dibanding zombi lain.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa dengan gerakan yang sangat lincah.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Kecepatan serangan, kecepatan gerak, dan kecepatan melempar Zombi Kecil adalah 2 kali lipat dari zombi raksasa biasa.</color></color></size>"
+        },
+        {
+            "theZombieType": 123,
+            "name": "Raksasa Mata Hijau",
+            "introduce": "<color=#3D1400>Saat dia mengayunkan tiang listriknya, kawanan zombi kecil akan muncul dari bawah tanah. Zombi-zombi kecil ini menambah keceriaan hidup sang raksasa, tapi juga menambah masalah—terutama saat dia baru saja memecahkan kacang kenari.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa yang memanggil zombi kecil setiap kali membunuh tanaman.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Setiap kali memukul hancur tanaman yang bisa ditindih, ia akan memunculkan 1 Zombi Kecil di lokasi tersebut.</color></color></size>"
+        },
+        {
+            "theZombieType": 124,
+            "name": "Raksasa Mata Kuning",
+            "introduce": "<color=#3D1400>Sebelum menyerbu taman, dia adalah atlet lempar bola dengan nilai sempurna. \"Kelima bolaku bisa melewati ring dengan sempurna!\" Karena sudah menjadi kebiasaan, dia lebih suka membawa lima zombi kecil di punggungnya untuk memecahkan rekor baru.</color>",
+            "info": "<size=14><color=blue>Zombi raksasa yang membawa lebih banyak zombi kecil di punggungnya.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Melemparkan 5 Zombi Kecil sekaligus dalam satu waktu serangan lempar.</color></color></size>"
+        },
+        {
+            "theZombieType": 125,
+            "name": "Zombi Parkour",
+            "introduce": "<color=#3D1400>Dia terkenal karena gerakan keren dan tekniknya yang luar biasa, tapi baginya itu tidak penting. Hanya manusia yang peduli dengan reputasi dan gelar, apa hubungannya hal itu dengan seekor zombi seperti dia?</color>",
+            "info": "<size=14><color=blue>Pecinta parkour yang sangat tangguh. Saat mencapai kondisi tertentu, ia akan berganti baris dan meluncur kencang.\n\n<color=black>Ketahanan: </color><color=red>9527</color>\n<color=black>Fitur: </color><color=red>Saat nyawa di bawah 2/3, kecepatannya meningkat 3 kali lipat dan ia akan segera berpindah ke baris lain.</color></color></size>"
+        },
+        {
+            "theZombieType": 126,
+            "name": "Zombi Kacang Tinggi Api",
+            "introduce": "<color=#3D1400>Dia selalu terlihat marah, bukan karena temperamen buruk, tapi karena perbedaan pendapat dengan saudaranya, si Kacang Tinggi Es. Saudaranya suka makan jamur dingin mentah, sedangkan dia yakin jamur harus dipanggang dulu sebelum dimakan.</color>",
+            "info": "<size=14><color=blue>Tidak takut api, namun dinginnya Jamur Es adalah kelemahannya.\n\n<color=black>Ketahanan: </color><color=red>270 + 2200 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal efek terbakar dan api cabai. Efek beku Jamur Es akan diubah menjadi Damage murni yang besar. Kecepatannya meningkat seiring waktu hingga maksimal 2 kali lipat.</color></color></size>"
+        },
+        {
+            "theZombieType": 127,
+            "name": "Zombi Kacang Tinggi Obsidian",
+            "introduce": "<color=#3D1400>Setelah ditempa oleh es dan api, kepala zombi ini menjadi tak hancurkan! ...Tentu saja, asalkan suhunya tidak berubah terlalu mendadak secara ekstrem.</color>",
+            "info": "<size=14><color=blue>Perpaduan es dan api membuatnya sangat keras, namun cabai dan jamur es tetap menjadi titik lemahnya.\n\n<color=black>Ketahanan: </color><color=red>1500 + 4500 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap efek panas, dingin, dan beku. Memiliki pertahanan armor tinggi. Serangan Cabai atau Jamur Es diubah menjadi Damage murni sebesar 1/3 dari ketahanan maksimalnya.</color></color></size>"
+        },
+        {
+            "theZombieType": 128,
+            "name": "Zombi Kacang Matahari",
+            "introduce": "<color=#3D1400>Berbeda dengan zombi lain, dia hanya perlu berjemur untuk memenuhi kebutuhan fisiologisnya. Kenapa dia masih mengejar otak? Mungkin karena memakan otak bagi zombi memiliki makna yang jauh lebih besar daripada sekadar kebutuhan biologis.</color>",
+            "info": "<size=14><color=blue>Zombi yang secara berkala akan menguras persediaan sinar mataharimu.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setiap 15 detik saat bergerak di arena, ia akan memotong 25 poin sinar mataharimu secara paksa.</color></color></size>"
+        },
+        {
+            "theZombieType": 129,
+            "name": "Zombi Kacang Matahari Kembar",
+            "introduce": "<color=#3D1400>Dia memiliki penampilan lebih mewah, kepala lebih keras, dan kemampuan lebih kuat dari rekan-rekannya. Tapi yang paling ia banggakan—dan membuatnya memenangkan penghargaan zombi terunik—adalah fakta bahwa dia memiliki empat mata.</color>",
+            "info": "<size=14><color=blue>Menggunakan sinar mataharimu untuk membatasi Damage yang diterimanya.\n\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal serangan instan. Setiap 15 detik memotong 25 matahari. Saat diserang, ia mengonsumsi 5 matahari untuk membatasi Damage yang diterima menjadi hanya 20 poin saja.</color></color></size>"
+        },
+        {
+            "theZombieType": 200,
+            "name": "Super Kapal Selam Mekanik",
+            "introduce": "<color=#3D1400>\"Penyelam hebat tidak hanya menyelam, tapi juga harus mahir mengemudikan kapal selam super!\" katanya sambil menaikkan tuas kecepatan mesin ke tingkat maksimal.</color>",
+            "info": "<size=14><color=blue>Senjata penghancur permukaan air yang dikembangkan oleh Perusahaan Ikan Mesin.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Menggilas tanaman dengan kecepatan sangat tinggi. Memberikan Damage besar pada tanaman yang memiliki pertahanan terhadap tindihan/gilasan.</color></color></size>"
+        },
+        {
+            "theZombieType": 201,
+            "name": "Zombi Kereta Raja Dansa",
+            "introduce": "<color=#3D1400>Sebenarnya ada satu tim di dalam kereta ini. Zombi Kereta Es menyiapkan arena, Zombi Bobsled memberikan efek kemunculan, sementara si Raja Dansa... karena tidak punya SIM, dia terpaksa turun untuk menyapa para fans tanamannya. Tapi sepertinya peluru kacang mereka sedikit terlalu antusias.</color>",
+            "info": "<size=14><color=blue>Zombi Raja Dansa yang mengendarai kereta es bobsled khusus.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Memiliki ciri khas Zombi Bobsled. Saat mati, ia akan memunculkan 1 Bobsled, 1 Raja Dansa, dan 1 Zombi Kereta Es secara bersamaan.</color>\n<color=black>Kelemahan: </color><color=red>Cabai, Berduri</color></color></size>"
+        },
+        {
+            "theZombieType": 202,
+            "name": "Zombi Super Trisula",
+            "introduce": "<color=#3D1400>Zombi Super Trisula adalah seorang nelayan handal. Empat trisula yang dilemparnya selalu tepat sasaran, sehingga ia dijuluki Raja Nelayan. \"Sebenarnya dulu aku pernah bekerja paruh waktu sebagai atlet lempar lembing...\" akunya.</color>",
+            "info": "<size=14><color=blue>Di bawah trisulanya, bahaya rawa akan terasa nyata.\n\n<color=black>Ketahanan: </color><color=red>720 + 7500 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setelah muncul selama 6-9 detik atau terhalang tanaman, ia melempar 4 trisula berturut-turut. Setiap lemparan memberikan Damage sebesar 20% dari sisa nyawa tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 203,
+            "name": "Zombi Gatling Ceri Koran",
+            "introduce": "<color=#3D1400>\"Aku sudah tua...\" gumamnya sambil berjalan. Tekanan auranya saja sudah cukup membuat tanaman dan zombi lain tidak berani mendongak. Hanya satu musuh yang bisa membangkitkan gairah bertarungnya. Dia melipat korannya, berjalan di jalanan, dan terus bergumam...</color>",
+            "info": "<size=14><color=blue>Seorang cendekiawan yang fokus membaca. Sangat berbahaya, jangan diganggu.\n\n<color=black>Damage: </color><color=red>400</color>\n<color=black>Ketahanan: </color><color=red>1500 + 1500 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Memiliki ciri khas Zombi Cendekiawan. Setelah korannya hancur, ia menembakkan 4 peluru ceri peledak setiap 0.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 204,
+            "name": "Zombi Rugbi Hitam Kacang Tinggi",
+            "introduce": "<color=#3D1400>Muncul dari kegelapan, ia kuat, dingin, dan jahat. Ia menolak berbagi rahasia kekuatannya, mengklaim bahwa kekuatan seperti itu hanya lahir dari kegelapan terdalam. \"Ke mana perginya cat hitamku?\" tanya Dr. Zomboss yang bingung melihat laboratoriumnya.</color>",
+            "info": "<size=14><color=blue>Penyerbu tak kenal takut yang bersembunyi di kegelapan malam. Mesin pembunuh sejati.\n\n<color=black>Ketahanan: </color><color=red>3000 + 12000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Saat menggigit, ia membuat tanaman kehilangan kemampuan memulihkan nyawa (regen) selama 1 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 205,
+            "name": "Zombi Kapal Induk Kirov",
+            "introduce": "<color=#3D1400>Benda terbang raksasa? Bukan! Ini adalah kapal balon udara raksasa dengan cangkang keras yang mampu melepaskan armada pesawat tempur. Jika hancur, ia akan menimpa apapun di bawahnya, membuat zombi lain tidak mau berada di dekatnya karena takut dikirim ke akhirat lebih cepat.</color>",
+            "info": "<size=14><color=blue>Kapal induk udara yang dikembangkan oleh Perusahaan Ikan Mesin.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Memanggil satu Mini Kirov setiap 3 detik. Kebal terhadap efek Daun Semanggi.</color>\n<color=black>Kelemahan: </color><color=red>Kaktus Magnet, Kaisar Belimbing</color></color></size>"
+        },
+        {
+            "theZombieType": 206,
+            "name": "Mini Kirov",
+            "introduce": "<color=#3D1400>Ini bukan pesawat biasa, melainkan pesawat khusus hasil kompresi teknologi tinggi. Meski ukurannya kecil, kekuatannya di medan perang tidak kalah dengan pesawat pengebom standar.</color>",
+            "info": "<size=14><color=blue>Pengebom kecil yang menjatuhkan kotak kejutan ke arah tanaman!\n\n<color=black>Ketahanan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>Kebal terhadap efek es dan Daun Semanggi. Menjatuhkan bom setiap 3 detik yang memberikan Damage ledakan area.</color></color></size>"
+        },
+        {
+            "theZombieType": 207,
+            "name": "Komandan Raja Dansa",
+            "introduce": "<color=#3D1400>Sebagai superstar di dunia idola zombi, ia sangat disiplin. Setelah lulus dari Akademi Dansa Edgar, ia menguasai \"Langkah Ruang Angkasa Super\" yang dinobatkan sebagai keajaiban dunia keenam bagi kaum zombi.</color>",
+            "info": "<size=14><color=blue>Jas putih klasik dengan langkah moonwalk yang sangat cepat.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Meluncur masuk ke arena selama 3 detik pertama dengan pengurangan Damage 90%. Setelah sampai, ia memanggil 4 Zombi Lompat Galah Raja Dansa.</color></color></size>"
+        },
+        {
+            "theZombieType": 208,
+            "name": "Zombi Vampir",
+            "introduce": "<color=#3D1400>Inilah kerangka dari Timur yang telah berusia seribu tahun. Tingginya delapan kaki, mengenakan brokat indah, dan memancarkan cahaya. Ia tidak mati disambar petir, sekuat beruang, dan tidak terlalu suka otak. Ia berkelana mencari kedamaian jiwa.</color>",
+            "info": "<size=14><color=blue>Tokoh besar yang telah tertidur selama seribu tahun.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Setiap 8-14 detik, ia melesat maju 2 kotak menembus tanaman dan memberikan 500 Damage pada tanaman yang dilewati. Saat mati, ia meledak.</color></color></size>"
+        },
+        {
+            "theZombieType": 209,
+            "name": "Badut Pogo",
+            "introduce": "<color=#3D1400>\"Aku berpakaian begini hanya untuk mengikuti tren,\" kata Badut Pogo sambil mengedikkan bahu saat ditanya soal penampilannya yang keren. Tapi semua tahu, dia punya sejarah cinta yang sangat menyakitkan.</color>",
+            "info": "<size=14><color=blue>Galah lompatnya berisi bom yang siap meledak kapan saja.\n\n<color=black>Ketahanan: </color><color=red>720 + 4400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Memiliki ciri khas Zombi Lompat. Jika mati saat masih memegang galah, ia akan meledak dan berubah menjadi Raja Badut yang memicu ledakan kotak kejutan.</color></color></size>"
+        },
+        {
+            "theZombieType": 210,
+            "name": "Super Boling Mekanik",
+            "introduce": "<color=#3D1400>Zombi Raksasa ingin sebuah bola boling, jadi si Zombi Kecil merombaknya dalam semalam. Sebenarnya dia cuma mengecat bagian luarnya dan mengambil semua camilan di dalamnya untuk dirinya sendiri.</color>",
+            "info": "<size=14><color=blue>Robot gelinding listrik yang dikembangkan oleh Perusahaan Ikan Mesin.\n\n<color=black>Ketahanan: </color><color=red>1350</color>\n<color=black>Fitur: </color><color=red>Bergerak sangat cepat. Memiliki kemampuan untuk membatasi Damage yang diterima menjadi hanya 1 poin untuk beberapa serangan pertama.</color></color></size>"
+        },
+        {
+            "theZombieType": 211,
+            "name": "Ikan Tanah",
+            "introduce": "<color=#3D1400>Teknologi Z-Tech terbaru memungkinkan ikan ini berenang di medan apa pun. Sayangnya sistem bioniknya terlalu bagus, sehingga di dalam tanah ia hanya meniru ikan mesin yang sedang tidur.</color>",
+            "info": "<size=14><color=blue>Ikan mekanik yang dipanggil oleh Super Kacang Mekanik.\n\n<color=black>Ketahanan: </color><color=red>1/3 dari nyawa pemanggil</color>\n<color=black>Fitur: </color><color=red>Tidak bergerak. Jika Super Kacang Mekanik menggunakan kartu kacang padanya, ia akan berubah menjadi Ikan Tanah terhipnotis.</color></color></size>"
+        },
+        {
+            "theZombieType": 212,
+            "name": "Raksasa Obsidian",
+            "introduce": "<color=#3D1400>Menurut literatur kuno, baju besi ungu gelap itu hanya bisa dipakai oleh tubuh yang telah melewati ujian suhu ekstrem. Ia akan muncul di tengah medan perang yang paling mengerikan. \"Hati-hati, jangan sampai membangunkan raksasa yang tidur di dalam bumi ini.\"</color>",
+            "info": "<size=14><color=blue>Zombi Raksasa di akhir perjalanan.\n\n<color=black>Damage Pukulan: </color><color=red>7200</color>\n<color=black>Ketahanan: </color><color=red>32000 + 32000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Setiap pukulan memunculkan Zombi Kecil Obsidian. Kebal terhadap hipnotis, ditelan, atau serangan instan. Memberikan bonus pertahanan pada seluruh zombi di arena.</color></color></size>"
+        },
+        {
+            "theZombieType": 213,
+            "name": "Zombi Kecil Obsidian",
+            "introduce": "<color=#3D1400>Aksi mendaratnya yang keren dirancang khusus untuk film Hollywood terbarunya, \"Jurassic Zombie\". Tidak ada yang tahu kalau sebenarnya dia hanya terlempar secara tidak sengaja oleh si raksasa.</color>",
+            "info": "<size=14><color=blue>Melesat masuk ke pertahananmu untuk mengacaukan segalanya.\n\n<color=black>Ketahanan: </color><color=red>1500</color>\n<color=black>Fitur: </color><color=red>Melesat maju sejauh 2.7 kotak saat muncul. Selama melesat, ia tidak bisa terkena serangan biasa.</color></color></size>"
+        },
+        {
+            "theZombieType": 214,
+            "name": "Zombi Paus Merah Ceri Mesin",
+            "introduce": "<color=#3D1400>Zombi ini punya sifat pemarah yang luar biasa saat bangun tidur, apalagi pasangannya si Paus Putih selalu menariknya paksa untuk bekerja. Jadi dia berencana meledakkan semua tanaman yang menghalanginya agar bisa tidur lagi.</color>",
+            "info": "<size=14><color=blue>Menunggangi paus merah melewati tiga tanaman, lalu menembakkan banyak ceri peledak.\n\n<color=black>Ketahanan: </color><color=red>1500</color>\n<color=black>Fitur: </color><color=red>Masuk ke mode mengamuk 3 detik setelah muncul, menembakkan 4 peluru ceri peledak setiap 1.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 215,
+            "name": "Zombi Misteri Berlian",
+            "introduce": "<color=#3D1400>!!!</color>",
+            "info": "<size=14><color=blue>Kotak misteri dengan kilau berlian. Pasti ada sesuatu yang luar biasa di dalamnya!\n\n<color=black>Ketahanan: </color><color=red>20000 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Saat hancur, ia akan memanggil satu Zombi Ultimate secara acak dengan sisa nyawa yang bervariasi.</color></color></size>"
+        },
+        {
+            "theZombieType": 216,
+            "name": "Kereta Trisula",
+            "introduce": "<color=#3D1400>Pasukan khusus di bawah komando Panglima Trisula Samudra. Karena kekurangan pasokan senjata, mereka terpaksa merampok rekan sendiri. \"Kami tidak punya pilihan,\" kata mereka di pengadilan militer zombi.</color>",
+            "info": "<size=14><color=blue>Menghujani garis pertahananmu dengan trisula!\n\n<color=black>Ketahanan: </color><color=red>1350 + 4400 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Setiap serangan meluncurkan 4 trisula ke posisi tanaman di depan. Setelah amunisi habis, ia akan maju menggilas tanaman.</color></color></size>"
+        },
+        {
+            "theZombieType": 217,
+            "name": "Raja Dansa Galah Putih",
+            "introduce": "<color=#3D1400>Semua zombi kagum pada kemampuan melompatnya. \"Bakat tidak akan memberimu kelincahan seperti macan tutul,\" katanya sambil tersenyum. \"Cobalah bangun jam 5 pagi, kau akan melihatku berlatih di jalanan.\"</color>",
+            "info": "<size=14><color=blue>Lompatan galah yang berubah menjadi tarian raja!\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Memiliki ciri khas Zombi Lompat Galah, namun mampu melompati rintangan sejauh 2 kotak sekaligus.</color></color></size>"
+        },
+        {
+            "theZombieType": 218,
+            "name": "Zombi Tombak Atlantis",
+            "introduce": "<color=#3D1400>Ia datang dari samudra terdalam, berasal dari zaman mitos. Ia kekal dan tak terpadamkan. Bahkan menghancurkannya hanyalah kemenangan sementara. Ia akan selalu kembali mengikuti pasang surut air laut.</color>",
+            "info": "<size=14><color=blue>Raja dari para zombi tenggelam.\n\n<color=black>Ketahanan: </color><color=red>24000 + 24000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Memanggil barisan Zombi Trisula saat muncul. Melemparkan trisula samudra yang memberikan Damage sangat besar (1 juta poin) pada tanaman di jalurnya.</color></color></size>"
+        },
+        {
+            "theZombieType": 219,
+            "name": "Boling Mekanik Raksasa",
+            "introduce": "<color=#3D1400>Sangat dipuji oleh kaum zombi sebagai perisai pelindung mereka. Sebenarnya bola ini tidak berniat melindungi zombi lain, hanya saja ukurannya terlalu besar sehingga semua serangan tanaman tertuju padanya.</color>",
+            "info": "<size=14><color=blue>Senjata rahasia dari Perusahaan Ikan Mesin.\n\n<color=black>Ketahanan: </color><color=red>300.000 (Maksimal Damage 300 per serangan)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Bergerak sangat cepat. Menanggung semua Damage yang seharusnya diterima oleh zombi lain di arena.</color></color></size>"
+        },
+        {
+            "theZombieType": 220,
+            "name": "Jenderal Rugbi Hitam",
+            "introduce": "<color=#3D1400>Dia adalah jenderal yang telah melewati ribuan pertempuran berdarah. Bendera di punggungnya mencatat nama-nama musuh yang telah ia kalahkan dan mengunci jiwa mereka di sana.</color>",
+            "info": "<size=14><color=blue>Tembok tinggi dan senjata tajammu hanyalah bayangan kosong di depannya.\n\n<color=black>Ketahanan: </color><color=red>24000 + 24000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal terhadap efek pukul mundur. Setiap gigitan dapat mengubah tanaman tertentu menjadi Zombi Rugbi Hitam Kacang Tinggi. Kekuatannya meningkat setiap 3 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 221,
+            "name": "Robot Laba Laba",
+            "introduce": "<color=#3D1400>“Mari bergabung!” teriak dua pilot hebat. Setelah cahaya merah yang menyilaukan, sebuah kapal udara besar menutupi seluruh langit.</color>",
+            "info": "<size=14><color=blue>Mecha Pembelah Langit telah lepas landas!\n\n<color=black>Ketahanan: </color><color=red>15000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin, Kebal Knockback, Gerakan Sangat Cepat. Muncul di darat dan melindas tanaman. Saat HP 2/3, menjadi tak terkalahkan sejenak lalu terbang. Setiap 3 detik memanggil 1 kolom Kirov Airship di sisi kanan, dan menembakkan meriam yang meledak seperti Jack-in-the-box.</color></color></size>"
+        },
+        {
+            "theZombieType": 222,
+            "name": "Zombi Mobil Panggung",
+            "introduce": "<color=#3D1400>Ini adalah panggung yang dibangun dengan cermat. Sebelum panggung hancur, dia akan mendedikasikan tarian dan lagu terakhirnya untuk semua.</color>",
+            "info": "<size=14><color=blue>Dia adalah Raja Musik Pop yang memanaskan suasana.\n\n<color=black>Ketahanan: </color><color=red>48000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Knockback, Dingin, Beku, Kaku, Red-Warm, Racun Bawang, dan Pindah Baris. Melindas tanaman. Efek ranjau paku memberikan damage 1% HP. Melindungi zombi sekitar dari efek dingin/beku. Setiap 10 gerakan ayun, memanggil 4 Komandan Dansa dan 4 Penari Galah Putih.</color></color></size>"
+        },
+        {
+            "theZombieType": 223,
+            "name": "Profesor Z",
+            "introduce": "<color=#3D1400>Sebagai mentor Dr. Edgar, Profesor Z memiliki sikap yang sangat sopan. Dia tidak akan marah jika kamu bertanya, kecuali jika kamu mengambil korannya...</color>",
+            "info": "<size=14><color=blue>Sarjana yang terobsesi dengan penelitian, dan sekarang menatapmu...\n\n<color=black>Damage Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>6000 + 15000 (Tipe 1) + 3000 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin, Kebal Knockback. Melindas tanaman (tidak menggigit). Saat koran hancur, mengubah hingga 30 zombi darat kecil menjadi Zombi Baca Koran Ceri, lalu melempar ceri peledak ke baris belakang.</color></color></size>"
+        },
+        {
+            "theZombieType": 224,
+            "name": "Ratu Badut",
+            "introduce": "<color=#3D1400>Keagungan sang Ratu tidak perlu dipertanyakan. Di dalam kotak hadiahnya, selain bom, ada hadiah untuk anak-anak.</color>",
+            "info": "<size=14><color=blue>Klik, klik—Ratu muncul dari kotak, pesta ledakan dimulai!\n\n<color=black>Ketahanan: </color><color=red>48000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Kaku dan Beku. Melindas tanaman. Setiap 8 detik mengeluarkan efek acak: Memanggil Raja Kloning Peledak, Raja Lompat Kloning, atau meledakkan seluruh barisnya sendiri.</color></color></size>"
+        },
+        {
+            "theZombieType": 225,
+            "name": "Zombi Rugbi Gatling Hitam",
+            "introduce": "<color=#3D1400>Dia adalah prajurit baja dengan tubuh baja, tekad baja, peluru baja, dan sikap yang sangat kaku.</color>",
+            "info": "<size=14><color=blue>Prajurit tak kenal takut! Tidak akan menghentikan langkahnya!\n\n<color=black>Damage Peluru: </color><color=red>80</color>\n<color=black>Damage Gigitan: </color><color=red>100</color>\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Kebal Knockback. Menembakkan kacang besi setiap 0.1 detik yang dapat memukul mundur tanaman yang terpesona (hypno).</color></color></size>"
+        },
+        {
+            "theZombieType": 226,
+            "name": "Tim Alpha Magang",
+            "introduce": "<color=#3D1400>Darah muda dari pasukan khusus zombi. Mereka berjanji untuk bertarung bersama hingga akhir hayat.</color>",
+            "info": "<size=14><color=blue>Dapat bertahan dari kematian berkali-kali selama rekan setimnya masih berdiri.\n\n<color=black>Damage: </color><color=red>500 x 2 (Non-Gigitan)</color>\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Kebal Hypno. Muncul dalam tim berisi 2 anggota. Jika satu mati, semua mati. Saat sekarat, masuk ke mode \"Istirahat Darurat\" selama 10 detik untuk pulih dan menerjang maju 2.5 kotak sambil memberikan 500 damage.</color></color></size>"
+        },
+        {
+            "theZombieType": 227,
+            "name": "Zombi Cakar Salju Kacang Tinggi",
+            "introduce": "<color=#3D1400>Mengenakan baju besi es berat dan memegang bilah tajam yang ditempa dari es dan api.</color>",
+            "info": "<size=14><color=blue>Zombi Kacang Tinggi dengan cakar salju berdamage tinggi.\n\n<color=black>Damage Gigitan: </color><color=red>300</color>\n<color=black>Ketahanan: </color><color=red>270 + 1100 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Muncul jika serangan Jamur Fume Ultimate atau Kaktus Ultimate memicu efek pesona (hypno) pada musuh salju.</color></color></size>"
+        },
+        {
+            "theZombieType": 228,
+            "name": "Ratu  Salju",
+            "introduce": "<color=#3D1400>Penguasa es dan badai. Dia adalah dewa buatan, hantu dari dataran salju.</color>",
+            "info": "<size=14><color=blue>Penguasa Dataran Salju yang sangat dingin.\n\n<color=black>Damage: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>64000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Dingin, Knockback, dan Kaku. Melindas tanaman. Serangan memberikan efek bungkam (Silence) selama 5 detik. Dapat memanggil bola salju 3x3 atau memicu badai salju di seluruh layar.</color></color></size>"
+        },
+        {
+            "theZombieType": 229,
+            "name": "Master Rugbi Hitam Kuda",
+            "introduce": "<color=#3D1400>Terbangun dari tidur panjang untuk menaklukkan taman. Menunggangi kuda perang Cossack dengan baju besi pemberian Dr. Edgar.</color>",
+            "info": "<size=14><color=blue>Berani menghadapi aku dalam duel berkuda?!\n\n<color=black>Damage Peluru: </color><color=red>80</color>\n<color=black>Ketahanan: </color><color=red>36000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Knockback dan Beku. Menembakkan peluru besi setiap 0.1 detik. Melakukan serangan seruduk kuda setiap 10 detik yang mengutuk tanaman 3x3 (Damage yang diterima zombi akan ditransfer ke tanaman yang dikutuk).</color></color></size>"
+        },
+        {
+            "theZombieType": 230,
+            "name": "Master Rugbi Hitam",
+            "introduce": "<color=#3D1400>Mantan pemimpin yang jatuh dari kudanya, namun tetap berbahaya.</color>",
+            "info": "<size=14><color=blue>Pemimpin yang telah jatuh, tidak lagi memiliki wibawa pemimpin.\n\n<color=black>Damage Peluru: </color><color=red>80</color>\n<color=black>Damage Gigitan: </color><color=red>100</color>\n<color=black>Ketahanan: </color><color=red>18000</color>\n<color=black>Fitur: </color><color=red>Kebal Knockback. Menembakkan peluru besi setiap 0.1 detik yang dapat memukul mundur tanaman yang terpesona (hypno).</color></color></size>"
+        },
+        {
+            "theZombieType": 231,
+            "name": "<BOSS> Grandmaster Rugbi Hitam",
+            "introduce": "<color=#3D1400>Perang adalah pengasah terbaik bagi jenderal. Setelah latihan neraka, Ksatria Mayat ini kembali untuk membangun takhta dari mayat musuhnya.</color>",
+            "info": "<size=14><color=blue>Kemarilah! Pasukanku yang telah gugur, ambil nyawa mereka!\n\n<color=black>Ketahanan: </color><color=red>90000</color>\n<color=black>Damage Tebasan: </color><color=red>500</color>\n<color=black>Fitur: </color><color=red>BOSS. Melindas tanaman dan membunuh instan tanaman hypno. Bergerak naik-turun di kolom paling kanan. Memanggil zombi di setiap baris, menerjang dengan tebasan pedang, atau melompat secara acak ke tengah panggung.</color></color></size>"
+        },
+        {
+            "theZombieType": 232,
+            "name": "Ksatria Hantu",
+            "introduce": "<color=#3D1400>Sang Grandmaster telah kembali! Dr. Edgar sangat puas dengan teknologi proyeksi fisik ini.</color>",
+            "info": "<size=14><color=blue>Seperti hantu yang sunyi, menembus pertahananmu dengan cepat.\n\n<color=black>Ketahanan: </color><color=red>15000</color>\n<color=black>Damage Tabrak: </color><color=red>1000</color>\n<color=black>Fitur: </color><color=red>Kebal Beku, Kaku, dan Knockback. Mengabaikan tanaman dan menerjang dari kanan ke kiri. Memberikan 1000 damage pada tanaman yang dilewati.</color></color></size>"
+        },
+        {
+            "theZombieType": 233,
+            "name": "Gargantuar Persenjataan Khusus",
+            "introduce": "<color=#3D1400>Gargantuar ini memiliki solidaritas tinggi, kecuali pada si mata biru. \"Kita bertiga sudah seperti lampu lalu lintas, dia berlebihan!\" kata si mata hijau.</color>",
+            "info": "<size=14><color=blue>Gargantuar dengan warna mata berbeda yang menandakan kemampuan berbeda.\n\n<color=black>Ketahanan: </color><color=red>16000 + 16000 (Tipe 1)</color>\n<color=black>Damage Pukulan: </color><color=red>3600</color>\n<color=black>Fitur: </color><color=red>Tidak melempar Imp. Mata Merah: Kebal Red-Warm. Mata Biru: Kebal Beku/Knockback & Kecepatan 2x. Mata Kuning: Kebal Kaku & lompat setelah memukul. Mata Hijau: Kebal Racun Bawang & Heal 10% HP saat memukul.</color></color></size>"
+        },
+        {
+            "theZombieType": 234,
+            "name": "Raja Imp Ultimate",
+            "introduce": "<color=#3D1400>Di dunia para Imp, dialah Rajanya. Mengendarai kapal cepat kesayangannya untuk membuat kekacauan.</color>",
+            "info": "<size=14><color=blue>Imp di ujung jalur pelayaran. Mengendarai kapal mewah Golden Chicken.\n\n<color=black>Ketahanan: </color><color=red>48000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Kaku dan Tangle Kelp. Melindas tanaman dengan cepat. Memberikan buff Armor +4 dan Kecepatan +20% ke semua zombi di layar.</color></color></size>"
+        },
+        {
+            "theZombieType": 235,
+            "name": "Zombi Raja Imp",
+            "introduce": "<color=#3D1400>Bahkan dalam perang, dia ingin waktu santai untuk memikirkan pertunjukan Halloween bagi rakyatnya.</color>",
+            "info": "<size=14><color=blue>Raja Imp yang sedang mundur, dia akan segera kembali jika berhasil melarikan diri.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Kebal Kaku dan Knockback. Bergerak ke kanan mengabaikan tanaman. Jika sampai ke sisi paling kanan, dia akan muncul kembali dengan kapal baru sebagai Raja Imp Ultimate.</color></color></size>"
+        },
+        {
+            "theZombieType": 236,
+            "name": "UFO Laser",
+            "introduce": "<color=#3D1400>UFO ini dilengkapi pemancar gelombang anti-gravitasi. Dr. Edgar mengelas pintunya agar pilot tidak bisa keluar.</color>",
+            "info": "<size=14><color=blue>Dilengkapi dengan dua senjata fiksi ilmiah klasik.\n\n<color=black>Damage Laser: </color><color=red>300</color>\n<color=black>Damage Beam: </color><color=red>10 / 0.02 detik</color>\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Menembakkan laser setiap 2 detik ke tanaman terdekat. Saat di atas tanaman, mengeluarkan pancaran energi konstan (memberikan heal jika UFO terpesona/hypno).</color></color></size>"
+        },
+        {
+            "theZombieType": 237,
+            "name": "Kapal Berat Paus Ceri",
+            "introduce": "<color=#3D1400>Dicat merah muda bukan untuk menyamar, tapi karena semua cat merah muda disangka jus otak oleh para zombi.</color>",
+            "info": "<size=14><color=blue>Menggunakan energi ceri untuk memperkuat mesinnya sendiri.\n\n<color=black>Ketahanan: </color><color=red>9000</color>\n<color=black>Fitur: </color><color=red>Melindas tanaman. Jika ledakan ceri mengenai tanaman di dekatnya, kapal ini akan pulih 150 HP dan kecepatannya meningkat hingga 8 kali lipat.</color></color></size>"
+        },
+        {
+            "theZombieType": 238,
+            "name": "Zombi Ksatria Beast Salju",
+            "introduce": "<color=#3D1400>Dia berpura-pura menjadi bayi beast untuk menjinakkan beast salju dewasa. Harganya? Dia harus hidup seperti hewan selamanya.</color>",
+            "info": "<size=14><color=blue>Menunggangi beast salju untuk mendorong mundur pertahananmu.\n\n<color=black>Ketahanan: </color><color=red>9000</color>\n<color=black>Fitur: </color><color=red>Kebal Beku. Mendorong tanaman ke kiri satu kotak saat bersentuhan. Jika tidak bisa didorong, dia akan membunuh instan tanaman paling kiri untuk memberi ruang.</color></color></size>"
+        },
+        {
+            "theZombieType": 239,
+            "name": "Raja Peledak Kloning",
+            "introduce": "<color=#3D1400>Zombi pertama yang bisa menggunakan galah dan kotak musik di atas air. Rahasianya? Pegas dan nitrogliserin!</color>",
+            "info": "<size=14><color=blue>Melompat di air dan melemparkan banyak bom ke arah tanaman.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Gerakan cepat. Jika terhalang tanaman, dia langsung mati dan melemparkan hujan bom Jack-in-the-box dalam radius 3.5 kotak.</color></color></size>"
+        },
+        {
+            "theZombieType": 240,
+            "name": "Gargantuar Benteng Trisula",
+            "introduce": "<color=#3D1400>Benteng di kepalanya adalah tanda kehormatan karena telah menghancurkan 300 kacang pelindung.</color>",
+            "info": "<size=14><color=blue>Gargantuar kuat yang pertahanannya meningkat seiring banyaknya jenis Gargantuar di layar.\n\n<color=black>Ketahanan: </color><color=red>18000</color>\n<color=black>Fitur: </color><color=red>Setiap ada 1 jenis Gargantuar lain, damage yang diterima berkurang 10%. Melemparkan 7 trisula sekaligus jika HP di bawah 50% dan amunisi penuh.</color></color></size>"
+        },
+        {
+            "theZombieType": 241,
+            "name": "Gargantuar Emas",
+            "introduce": "<color=#3D1400>Gargantuar Emas sangat membenci baju besi standar. Dia merasa butuh perlengkapan yang menunjukkan statusnya.\n\"Itu tidak mungkin,\" Dr. Edgar menolak mentah-mentah. \"Baju besi standar tidak hanya mudah dibuat, tapi juga efektif mencegah kalian para raksasa menjadi terlalu gemuk.\"</color>",
+            "info": "<size=14><color=blue>Saat terluka parah, dia menjadi tak tersentuh oleh segala efek, memanggil klon, dan mendapatkan kekuatan yang mengguncang dunia.\n\n<color=black>Ketahanan: </color><color=red>18000 + 18000 (Tipe 1)</color>\n<color=black>Kerusakan Pukulan: </color><color=red>4800</color>\n<color=black>Kecepatan: </color><color=red>Lambat, menjadi Sangat Lambat setelah membesar.</color>\n<color=black>Fitur: </color><color=red>Kebal Hypno dan Knockback. Saat HP < 50%, menghapus semua debuff dan menjadi kebal permanen terhadap Dingin, Beku, Racun, dan Kaku. Memanggil klon Gargantuar di setiap baris; jika klon masih ada setelah 15 detik, dia akan menyerap mereka, membesar, serta melipatgandakan HP dan Attack-nya.</color></color></size>"
+        },
+        {
+            "theZombieType": 242,
+            "name": "Zombi Gatling Nuklir Koran",
+            "introduce": "<color=#3D1400>Dia ahli dalam ilmu peledak dan fisika atom. Setelah mengabdi setengah hidupnya untuk sains, sekarang dia hanya ingin menikmati teka-teki silang. Tapi jika ada yang mengganggunya, dia tidak keberatan menunjukkan proyek kelulusannya dulu.</color>",
+            "info": "<size=14><color=blue>Menembakkan peluru kehancuran yang sulit dipadamkan dan bisa memulihkan diri dengan mengorbankan nyawa.\n\n<color=black>Ketahanan: </color><color=red>1500 + 1500 (Tipe 2)</color>\n<color=black>Kerusakan Gigitan: </color><color=red>400</color>\n<color=black>Kerusakan Peluru: </color><color=red>1000</color>\n<color=black>Kecepatan: </color><color=red>Lambat, menjadi Sangat Cepat setelah koran hancur.</color>\n<color=black>Fitur: </color><color=red>Setelah koran hancur, menembakkan 4 peluru Doom-shroom setiap 0.5 detik. Setiap peluru memberikan damage 5 kali berturut-turut. Memulihkan HP setara damage yang diberikan ke tanaman dengan bayaran 1% total HP.</color></color></size>"
+        },
+        {
+            "theZombieType": 243,
+            "name": "Pasukan Alpha",
+            "introduce": "<color=#3D1400>Bilah mereka tak tertandingi, mampu menembus garis pertahanan mana pun. Kerja sama mereka telah mencapai puncak; saat mereka bergerak, tembok pertahanan terkuat pun akan terlihat seperti pajangan.</color>",
+            "info": "<size=14><color=blue>Kumpulan elit dari Pasukan Alpha yang telah terorganisir sepenuhnya.\n\n<color=black>Kerusakan: </color><color=red>500 x 2 (Non-Gigitan)</color>\n<color=black>Ketahanan: </color><color=red>30000 + 30000 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Muncul dalam satu tim besar berisi (Jumlah Baris x 5) anggota. Memiliki mekanisme \"Istirahat Darurat\" (bertahan dengan 1 HP, imun 10 detik, lalu pulih dan menerjang maju 2.5 kotak dengan ledakan).</color></color></size>"
+        },
+        {
+            "theZombieType": 244,
+            "name": "Legenda Tulang Abadi",
+            "introduce": "<color=#3D1400>Konon ribuan tahun lalu, sesosok naga pembawa pedang turun dari langit. Tak ada yang tahu apakah dia zombi, tanaman, atau naga, maka mereka menyebutnya Tulang Abadi Sepuluh Ribu Tahun.</color>",
+            "info": "<size=14><color=blue>Mengendalikan roh dan senjata, memerintahkan keabadian abadi.\n\n<color=black>Ketahanan: </color><color=red>15000 x 4 Fase</color>\n<color=black>Fitur: </color><color=red>Zombi Pemimpin. Tidak bergerak. Memiliki 4 fase; setiap ganti fase akan meledakkan area sekitarnya. Dia akan mencuri alat pemain:\n1. Curi Palu: Menyerang tanaman HP tertinggi setiap 3 detik (Damage: </color><color=red>1000</color><color=red>).\n2. Curi Sarung Tangan: Memindahkan zombi ke depan 2 kotak.\n3. Curi Sekop: Menghapus tanaman dengan harga matahari terendah.\n4. Fase Akhir: Menggunakan ketiga kemampuan di atas sekaligus.</color></color></size>"
+        },
+        {
+            "theZombieType": 300,
+            "name": "Zombi Pelajar Gatling Ceri (Level 1)",
+            "introduce": "<color=#3D1400>\"Ada yang lebih penting dari matematika, seperti indahnya malam ini,\" gumamnya. Namun, dia harus menyelesaikan Sudoku yang sulit ini dulu.</color>",
+            "info": "<size=14><color=blue>Zombi pelajar yang akan mengeluarkan banyak ceri peledak saat marah.\n\n<color=black>Kerusakan Gigitan: </color><color=red>400</color>\n<color=black>Kerusakan Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>1500 + 1500 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Setelah koran hancur, menembakkan 4 peluru ceri peledak setiap 0.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 301,
+            "name": "Zombi Sarjana Gatling Ceri (Level 2)",
+            "introduce": "<color=#3D1400>Dosen ahli peledak dari Universitas Internasional Zombi. Dia datang ke taman karena Dr. Edgar menjanjikan tiga hal: Pai ceri, ledakan, dan main Zuma.</color>",
+            "info": "<size=14><color=blue>Zombi pelajar yang bisa menembakkan ceri peledak bahkan sebelum dia marah.\n\n<color=black>Kerusakan Gigitan: </color><color=red>400</color>\n<color=black>Kerusakan Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Sebelum koran hancur, sudah menembakkan 4 peluru ceri setiap 1.5 detik. Setelah hancur, jeda tembak menjadi 0.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 302,
+            "name": "Zombi Magister Gatling Ceri (Level 3)",
+            "introduce": "<color=#3D1400>Untuk memperdalam ilmu peledaknya, dia siap merantau jauh. Keranjang pai ceri di punggungnya adalah bekal perjalanannya.</color>",
+            "info": "<size=14><color=blue>Apa yang ada di punggungnya adalah hasil kelulusannya, jangan buat dia marah.\n\n<color=black>Kerusakan Gigitan: </color><color=red>400</color>\n<color=black>Kerusakan Peluru: </color><color=red>1000</color>\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 2)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Saat koran hancur, dia mengambil magasin di punggungnya untuk menembakkan peluru tambahan setiap 0.5 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 303,
+            "name": "Zombi Rugbi Hitam (Level 1)",
+            "introduce": "<color=#3D1400>Bosan jadi pusat perhatian, dia mengganti seragam merahnya dengan warna hitam agar mudah bersembunyi di malam hari. Tapi ini malah membuatnya terlihat mencurigakan bagi satpam bank.</color>",
+            "info": "<size=14><color=blue>Pemain rugbi dengan baju besi hitam pekat model terbaru.\n\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1.</color></color></size>"
+        },
+        {
+            "theZombieType": 304,
+            "name": "Kapten Rugbi Hitam (Level 2)",
+            "introduce": "<color=#3D1400>Datang dari kegelapan yang misterius. Masa lalunya seperti mimpi yang hilang saat fajar tiba.</color>",
+            "info": "<size=14><color=blue>Penerjang tak kenal takut di tengah malam, prajurit elit.\n\n<color=black>Kerusakan Gigitan: </color><color=red>100</color>\n<color=black>Ketahanan: </color><color=red>12000 + 12000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Memulihkan 5% HP setiap 3 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 305,
+            "name": "Letnan Rugbi Hitam (Level 3)",
+            "introduce": "<color=#3D1400>Tangan kanan Jenderal yang setia. Dia hanya bingung satu hal: Kenapa saat upacara dia diberi medali, bukan otak segar?</color>",
+            "info": "<size=14><color=blue>Asisten jenderal yang sangat ahli dalam serangan jarak dekat yang kejam.\n\n<color=black>Kerusakan Gigitan: </color><color=red>200</color>\n<color=black>Ketahanan: </color><color=red>24000 + 24000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Kebal Knockback, Dingin, Beku, dan Mentega. Memulihkan 5% HP setiap 3 detik. Gigitannya membuat tanaman tidak bisa di-heal dan menerima damage 3x lipat.</color></color></size>"
+        },
+        {
+            "theZombieType": 306,
+            "name": "Letnan Gatling Rugbi Hitam (Level 3)",
+            "introduce": "<color=#3D1400>Letnan yang tak kenal takut di medan perang. Di luar tugas, dia suka menghibur prajuritnya dengan trik sulap menyembunyikan peluru di balik bendera.</color>",
+            "info": "<size=14><color=blue>Asisten jenderal dengan daya tembak jarak jauh yang menghujani musuh.\n\n<color=black>Kerusakan Peluru: </color><color=red>80</color>\n<color=black>Kerusakan Gigitan: </color><color=red>200</color>\n<color=black>Ketahanan: </color><color=red>24000 + 24000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Kebal Knockback, Dingin, Beku, dan Mentega. Menembakkan peluru kacang besi setiap 0.1 detik.</color></color></size>"
+        },
+        {
+            "theZombieType": 307,
+            "name": "Raja Dansa Baju Putih (Level 1)",
+            "introduce": "<color=#3D1400>Superstar dunia zombi. Ke mana pun dia pergi, selalu dikerumuni penggemar. Dia sedang belajar dansa baru untuk tur dunia sekaligus menghindari fans fanatik.</color>",
+            "info": "<size=14><color=blue>Raja dansa yang mengenakan setelan putih bersama para pendampingnya.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Masuk dengan Moonwalk selama 3 detik, lalu memanggil 4 Penari Galah Putih.</color></color></size>"
+        },
+        {
+            "theZombieType": 308,
+            "name": "Komandan Dansa Baju Putih (Level 2)",
+            "introduce": "<color=#3D1400>Langkah yang indah, tarian yang menghantui. Dia baru kembali dari Akademi Dansa Jackson untuk menunjukkan evolusi barunya dalam video musik.</color>",
+            "info": "<size=14><color=blue>Raja Dansa Baju Putih yang masuk dengan meluncur cepat.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Meluncur masuk selama 3 detik hingga mencapai baris ke-4 atau terhalang tanaman, lalu memanggil 4 Penari Galah Putih.</color></color></size>"
+        },
+        {
+            "theZombieType": 309,
+            "name": "Komandan Tur Dansa (Level 3)",
+            "introduce": "<color=#3D1400>Inilah bintang utama di puncak kariernya! Dia hanya butuh panggung yang megah untuk membagikan kebahagiaan kepada semua orang yang mencintainya.</color>",
+            "info": "<size=14><color=blue>Masuk dengan gaya emas mewah, penari pendamping datang dari segala arah.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Meluncur masuk mengabaikan tanaman hingga mencapai baris ke-4, lalu memanggil 8 Penari Galah Putih di sekitarnya.</color></color></size>"
+        },
+        {
+            "theZombieType": 310,
+            "name": "Kapal Mekanik",
+            "introduce": "<color=#3D1400>Produk tiruan dari perusahaan saingan Mecha Fish. Katanya punya performa yang sama, tapi Mecha Fish bersikeras kalau tiruan ini bocor.</color>",
+            "info": "<size=14><color=blue>Kapal perang baru hasil riset perusahaan Mecha Fish.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Melindas tanaman di jalur air dengan kecepatan cukup tinggi.</color></color></size>"
+        },
+        {
+            "theZombieType": 311,
+            "name": "Kapal Mekanik Rudal",
+            "introduce": "<color=#3D1400>Senjata yang \"sempurna\" itu terlalu dilebih-lebihkan. Bagi zombi, kemenangan sejati diraih melalui jaring tembakan rudal masif yang menutupi langit! Kapal ini adalah peluncur rudal terapung yang dimodifikasi dari kapal penebar ranjau.</color>",
+            "info": "<size=14><color=blue>Dilengkapi dengan proyektil Jack-in-the-box jarak dekat untuk membombardir barisan depan.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Menembakkan satu rudal ke 2 kotak di depannya setiap 1.5 detik. Rudal akan meledak saat mengenai target. Rudal bisa dihancurkan jika menerima </color><color=red>1000 damage</color><color=red>.</color></color></size>"
+        },
+        {
+            "theZombieType": 312,
+            "name": "Kapal Mekanik Penerjang",
+            "introduce": "<color=#3D1400>Tujuan operasionalnya adalah menerobos cepat dan mengacaukan formasi musuh. Beberapa ahli bilang kapal ini mengorbankan terlalu banyak fitur demi kecepatan, tapi Dr. Edgar tidak peduli—yang dia butuhkan hanyalah \"Maju, maju, dan maju dengan segala cara!\"</color>",
+            "info": "<size=14><color=blue>Dilengkapi dengan mesin turbo untuk menerjang cepat di jalur air.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Melindas tanaman di jalur air dengan kecepatan yang sangat tinggi.</color></color></size>"
+        },
+        {
+            "theZombieType": 313,
+            "name": "Kapal Selam Mekanik Guntur",
+            "introduce": "<color=#3D1400>Ini adalah penguasa medan perang, mahakarya Dr. Edgar dan Mecha Fish. Setelah masalah kebocoran rudal teratasi, senjata ini tidak lagi memiliki cacat. \"Ya, kecuali masalah baling-baling yang sering tersangkut rumput laut,\" kata Dr. Edgar.</color>",
+            "info": "<size=14><color=blue>Dilengkapi rudal jelajah jarak jauh yang menyerang barisan belakang saat muncul ke permukaan.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Secara default menyelam; jika ada tanaman di depan, ia akan muncul dan berhenti bergerak untuk menembakkan 2 rudal ke kolom terakhir setiap 1.5 detik. Rudal bisa dihancurkan (</color><color=red>1000 damage</color><color=red>) atau ditiup oleh Blover.</color></color></size>"
+        },
+        {
+            "theZombieType": 314,
+            "name": "Kapal Penerjang Guntur",
+            "introduce": "<color=#3D1400>Mewakili puncak kecerdasan zombi. Karena akselerasinya yang luar biasa, seluruh kru harus lulus tes sentrifugasi yang ketat. \"Rasanya seperti ditindih sepuluh Gargantuar Mekanik,\" kata salah satu kru zombi.</color>",
+            "info": "<size=14><color=blue>Binatang baja di jalur air, bagaikan tombak di medan perang.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Melindas tanaman dengan kecepatan sangat tinggi. 0.3 detik setelah muncul, ia akan melipatgandakan kecepatan zombi di area 3x3 di sekitarnya (maksimal 2x tumpuk).</color></color></size>"
+        },
+        {
+            "theZombieType": 315,
+            "name": "Zombi Rugbi Trident (Level 1)",
+            "introduce": "<color=#3D1400>Pakai baju nelayan tahan air, bawa trisula tajam, dan bersihkan sepatu bot keberuntunganmu. Perburuan ikan dimulai! Oh, jangan lupa pakai helm untuk berjaga-jaga dari tusukan teman sendiri yang iri karena tidak dapat ikan.</color>",
+            "info": "<size=14><color=blue>Melemparkan trisula ke tanaman di barisan paling belakang.\n\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Setelah 6-9 detik atau terhalang tanaman, ia akan melempar 4 trisula berturut-turut ke baris terakhir. Setiap trisula memberikan damage sebesar </color><color=red>20% dari HP tanaman (minimal 60 damage)</color><color=red>.</color></color></size>"
+        },
+        {
+            "theZombieType": 316,
+            "name": "Zombi Trisula Laut Biru (Level 2)",
+            "introduce": "<color=#3D1400>Pakai tetes mata untuk memperjelas penglihatan dan siapkan helm Tall-nut. Kunci sukses memancing adalah menusuk temanmu yang berhasil mendapatkan ikan dari belakang.</color>",
+            "info": "<size=14><color=blue>Melemparkan trisula secara acak, nasibmu ada di tangan takdir jika diincar olehnya.\n\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Melemparkan 8 trisula secara acak ke tanaman yang jaraknya lebih dari 4 kotak. Damage dasar trisulanya meningkat </color><color=red>100 poin</color><color=red>.</color></color></size>"
+        },
+        {
+            "theZombieType": 317,
+            "name": "Jenderal Trisula Laut Dalam (Level 3)",
+            "introduce": "<color=#3D1400>Dia seharusnya menjadi elit pengendali kendaraan tempur, tapi karena kepalanya terlalu besar dan sering goyang yang bisa membuat kendaraan terbalik, dia tetap menjadi prajurit infanteri.</color>",
+            "info": "<size=14><color=blue>Melemparkan trisula dalam jumlah banyak secara menyebar.\n\n<color=black>Ketahanan: </color><color=red>12000 + 12000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Melemparkan 12 trisula sekaligus; saat dilempar, trisula akan membelah dan menyerang setiap tanaman yang jaraknya lebih dari 4 kotak. Damage dasar trisulanya meningkat </color><color=red>300 poin</color><color=red>.</color></color></size>"
+        },
+        {
+            "theZombieType": 318,
+            "name": "Zombi Beliung Netherite (Level 1)",
+            "introduce": "<color=#3D1400>Beliung Netherite dan lisensi Netherite, dia memulai bisnis batu baranya. Dia ingin menjualnya dengan harga tinggi ke Ratu Teratai Api, tapi sepertinya monopoli Wither Skeleton lebih kuat.</color>",
+            "info": "<size=14><color=blue>Zombi penggali dengan peralatan dari Netherite, kecepatan menggalinya sangat luar biasa.\n\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Setiap serangan memberikan </color><color=red>1000 nilai galian</color><color=red>; jika nilai galian melebihi HP tanaman, tanaman tersebut akan langsung hancur (Insta-kill).</color></color></size>"
+        },
+        {
+            "theZombieType": 319,
+            "name": "Zombi Bor Netherite (Level 2)",
+            "introduce": "<color=#3D1400>Dia baru saja memenangkan kompetisi menggali berkat bor bertenaga lava miliknya. Yang tidak dia beri tahu adalah helmnya juga terbuat dari Netherite agar kepalanya tidak ikut kepanasan.</color>",
+            "info": "<size=14><color=blue>Bisa menggali terowongan bawah tanah, hanya saja sering kehilangan arah.\n\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Memberikan </color><color=red>2000 nilai galian</color><color=red> per serangan. Saat di bawah tanah, ia akan muncul secara acak di antara kolom 3 sampai 9.</color></color></size>"
+        },
+        {
+            "theZombieType": 320,
+            "name": "Zombi Bor Netherite Bersenjata (Level 3)",
+            "introduce": "<color=#3D1400>Ketua regu penggali yang berambisi membangun kekaisaran galian. Tapi Dr. Edgar bilang: \"Zombi lain mengikutinya hanya karena helmnya menutupi mata, sehingga dia sering tidak sengaja menggali menembus makam zombi lain.\"</color>",
+            "info": "<size=14><color=blue>Zombi bor yang dipersenjatai lengkap, bisa membawa zombi lain di dalam terowongan.\n\n<color=black>Ketahanan: </color><color=red>12000 + 12000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Memberikan </color><color=red>4000 nilai galian</color><color=red> per serangan. Membawa zombi non-kendaraan di sekitarnya untuk ikut masuk ke bawah tanah dan muncul bersama di kolom 3-9.</color></color></size>"
+        },
+        {
+            "theZombieType": 321,
+            "name": "Kereta Tempur Dansa (Level 1)",
+            "introduce": "<color=#3D1400>Serbu, serbu, dan lindas semuanya! Kereta ini tak terhentikan sampai dia bertemu dengan sungai besar di tengah halaman.</color>",
+            "info": "<size=14><color=blue>Zombi Dansa yang mengendarai kereta tempur kokoh.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Melindas tanaman. Memiliki 1 poin koefisien Armor. Saat hancur, akan memunculkan satu Zombi Dansa.</color></color></size>"
+        },
+        {
+            "theZombieType": 322,
+            "name": "Kereta Tempur Dansa Ringan (Level 2)",
+            "introduce": "<color=#3D1400>\"Kami menambahkan lebih banyak lapisan di bagian depan!\" Mobil modifikasi baru ini membuat Raja Dansa kegirangan, sayangnya celah antar lapisannya tidak cukup untuk memasukkan lebih banyak penari latar.</color>",
+            "info": "<size=14><color=blue>Kereta tempur dengan lapisan pelindung tambahan di bagian luar.\n\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Melindas tanaman. Memiliki 2 poin koefisien Armor. Saat hancur, akan memunculkan satu Kereta Tempur Dansa (Level 1).</color></color></size>"
+        },
+        {
+            "theZombieType": 323,
+            "name": "Kereta Tempur Dansa Berat (Level 3)",
+            "introduce": "<color=#3D1400>Kendaraan ini dijuluki \"Kapal Perang Darat\" karena zirah bajanya yang sangat tebal. Raja Dansa punya ide gila: mengganti roda dengan roda rantai tank dan memasang meriam panjang di atasnya.</color>",
+            "info": "<size=14><color=blue>Kereta tempur dengan dua lapis baja berat.\n\n<color=black>Ketahanan: </color><color=red>24000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Melindas tanaman. Memiliki 3 poin koefisien Armor. Saat hancur, akan memunculkan Kereta Tempur Dansa Ringan (Level 2).</color></color></size>"
+        },
+        {
+            "theZombieType": 324,
+            "name": "Zombi Pogo Jack-in-the-box (Level 1)",
+            "introduce": "<color=#3D1400>Jangan ganggu dia, dia sedang jatuh cinta. Jangan bicara hal pesimis tentang cintanya, atau kamu akan mendapatkan pembalasan yang meledak-ledak.</color>",
+            "info": "<size=14><color=blue>Zombi Pogo dengan tongkat pegas bom model baru yang sulit dilepas oleh magnet.\n\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Tongkat pogo tidak akan hilang meski terkena efek knockback Umbrella Leaf. Jika mati saat memegang tongkat, ia akan meledak seperti Jack-in-the-box.</color></color></size>"
+        },
+        {
+            "theZombieType": 325,
+            "name": "Raja Pogo Jack-in-the-box (Level 2)",
+            "introduce": "<color=#3D1400>Dia menggabungkan konsep tongkat pogo, melon, dan kotak musik setelah belajar dari Zombi Ketapel. Hasilnya? Kesuksesan yang eksplosif.</color>",
+            "info": "<size=14><color=blue>Dilengkapi dengan alat pelontar pegas sekali pakai.\n\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Saat muncul di sisi kanan halaman, ia akan mengisi tenaga selama 5 detik lalu melompat jauh sejauh 4 kotak.</color></color></size>"
+        },
+        {
+            "theZombieType": 326,
+            "name": "Raja Pogo Teror (Level 3)",
+            "introduce": "<color=#3D1400>Setelah lama menderita karena patah hati, sekarang dia dandan habis-habisan untuk mendekati dewi barunya: Ratu Jester. Semoga mentalnya lebih kuat kali ini.</color>",
+            "info": "<size=14><color=blue>Alat pelontar yang telah disempurnakan, asap ledakannya adalah tirai untuk penyamarannya.\n\n<color=black>Ketahanan: </color><color=red>12000 + 12000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Jeda pengisian lompatan hanya 0.5 detik. Jika mati saat memegang tongkat pogo, ia akan hidup kembali satu kali.</color></color></size>"
+        },
+        {
+            "theZombieType": 327,
+            "name": "Pesawat Pengebom Kirov",
+            "introduce": "<color=#3D1400>Untuk pengeboman taktis skala kecil, pesawat yang lebih ringan mungkin lebih cocok. Mecha Fish seharusnya izin dulu ke Dr. Edgar saat mendesain ini agar tidak kena tuntutan hukum.</color>",
+            "info": "<size=14><color=blue>Pesawat Kirov yang menjatuhkan bom Jack-in-the-box secara rutin.\n\n<color=black>Kerusakan Bom: </color><color=red>500 (Area)</color>\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Menjatuhkan bom setiap 1.5 detik. Pesawat akan jatuh jika terkena peluru Ultimate Star sebanyak 20 kali.</color></color></size>"
+        },
+        {
+            "theZombieType": 328,
+            "name": "Kapal Induk Kirov",
+            "introduce": "<color=#3D1400>Produk inti Mecha Fish yang menggunakan teknologi drone terbaru. Tapi jika kamu melihat bangkai pesawatnya, kamu akan menemukan tulisan merah \"CCCP\".</color>",
+            "info": "<size=14><color=blue>Kapal induk udara yang membawa Kirov mini khusus.\n\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Memanggil 1 Kirov mini (HP 10% dari induk) setiap 3 detik. Jatuh setelah terkena peluru Ultimate Star 30 kali.</color></color></size>"
+        },
+        {
+            "theZombieType": 329,
+            "name": "Pesawat Pemandu Aviasi",
+            "introduce": "<color=#3D1400>Penetrasi ketinggian tinggi! Serangan terintegrasi! Cakupan tembakan luas! Mecha Heavy Industries mempersembahkan Pesawat Ringan 2.0!</color>",
+            "info": "<size=14><color=blue>Kapal induk yang membawa pesawat pengebom fisik super cepat.\n\n<color=black>Kerusakan Bom: </color><color=red>300</color>\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Setiap 3 detik meluncurkan 2 pesawat pengebom cepat yang membombardir tanaman di depannya. Jatuh setelah terkena 40 peluru Ultimate Star.</color></color></size>"
+        },
+        {
+            "theZombieType": 330,
+            "name": "Zombi Mayat Berambut (Abad)",
+            "introduce": "<color=#3D1400>Dulu dia adalah pejabat jujur yang sering memprotes raja. Meski raja tidak pernah menghukumnya, ternyata itu karena raja sudah tuli dan tidak mendengar protesnya.</color>",
+            "info": "<size=14><color=blue>Mayat yang terkumpul energi negatif, tubuhnya meledak dan melukai tanaman.\n\n<color=black>Kerusakan: </color><color=red>250 (Non-Gigitan)</color>\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Saat mati karena damage, memberikan </color><color=red>125 damage</color><color=red> dalam area 3x3.</color></color></size>"
+        },
+        {
+            "theZombieType": 331,
+            "name": "Zombi Mayat Terbang (Milenium)",
+            "introduce": "<color=#3D1400>Zombi ini bisa bergerak menembus tanaman dengan sangat cepat. Kekuatannya luar biasa hingga mampu menghancurkan pertahanan dalam sekejap.</color>",
+            "info": "<size=14><color=blue>Bayangan mayat yang lewat membawa angin dingin kematian.\n\n<color=black>Kerusakan: </color><color=red>500 (Non-Gigitan)</color>\n<color=black>Ketahanan: </color><color=red>6000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Setiap 4-8 detik, menerjang maju 2 kotak mengabaikan tanaman. Saat mati, memberikan </color><color=red>250 damage</color><color=red> area 3x3.</color></color></size>"
+        },
+        {
+            "theZombieType": 332,
+            "name": "Kaisar Mayat (Sepuluh Ribu Tahun)",
+            "introduce": "<color=#3D1400>Dia menyebut dirinya Kaisar Mayat setelah lidahnya terluka oleh segel kekaisaran saat mencoba merebut kekuasaan di masa lalu.</color>",
+            "info": "<size=14><color=blue>Bergerak secepat kilat, membuat para jenderal hantu pun menepi.\n\n<color=black>Kerusakan: </color><color=red>1000 (Non-Gigitan)</color>\n<color=black>Ketahanan: </color><color=red>12000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Di sisi kanan halaman, setiap 4-8 detik ia bisa menerjang hingga ke tanaman paling belakang baris tersebut. Saat mati, memberikan </color><color=red>500 damage</color><color=red> area 3x3.</color></color></size>"
+        },
+        {
+            "theZombieType": 333,
+            "name": "Kereta Trisula Ringan",
+            "introduce": "<color=#3D1400>Membawa legenda dari buku tua, kereta ini mencoba menyerang dari jauh. Sayangnya pengemudinya sering lupa kalau rudal butuh tenaga mesin agar terbang jauh.</color>",
+            "info": "<size=14><color=blue>Menumpahkan sedikit trisula ke arah musuh.\n\n<color=black>Ketahanan: </color><color=red>3000</color>\n<color=black>Fitur: </color><color=red>Zombi Level 1. Menembakkan 4 trisula per serangan, bisa diulang sekali setelah reload, lalu maju melindas tanaman. Trisula jatuh di 5-7 kotak di depan.</color></color></size>"
+        },
+        {
+            "theZombieType": 334,
+            "name": "Kereta Trisula Berat",
+            "introduce": "<color=#3D1400>Latihan menembak kereta ini sangat unik. Karena tidak bisa mengatur sudut tembak, pengemudi harus memajukan keretanya untuk mengatur jarak. Terlalu maju sedikit saja, kereta akan tercebur ke kolam.</color>",
+            "info": "<size=14><color=blue>Menumpahkan banyak trisula sekaligus.\n\n<color=black>Ketahanan: </color><color=red>3000 + 3000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 2. Memiliki fitur yang sama dengan versi ringan, tapi jumlah trisula meningkat menjadi 14 buah.</color></color></size>"
+        },
+        {
+            "theZombieType": 335,
+            "name": "Kereta Trisula Martir",
+            "introduce": "<color=#3D1400>Seorang prajurit elit trisula datang sebagai pengemudi baru. Dia pernah berburu monster salju dan bertarung dengan buaya. Sekarang dia di depanmu, sanggupkah kamu menghindari serangannya?</color>",
+            "info": "<size=14><color=blue>Menumpahkan banyak trisula; trisula yang dibawa memiliki kemampuan meledak secara menyebar.\n\n<color=black>Ketahanan: </color><color=red>6000 + 6000 (Tipe 1)</color>\n<color=black>Fitur: </color><color=red>Zombi Level 3. Memiliki fitur versi berat. Saat hancur, sisa trisula yang belum ditembakkan akan jatuh secara acak di area sekitar 3.5 kotak dan melukai tanaman.</color></color></size>"
+        }
+    ]
+}

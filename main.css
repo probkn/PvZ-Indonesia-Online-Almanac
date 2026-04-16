@@ -1,0 +1,238 @@
+/* --- RESET & BASE --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Font1', Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+/* --- FONT DEFINITIONS --- */
+@font-face { font-family: 'Font1'; src: url('font/font1.ttf'); }
+@media (max-width: 1200px) { body { font-size: 14px; } }
+@media (max-width: 800px) { body { font-size: 12px; } }
+/* --- CONTAINER UTAMA --- */
+.almanac-container {
+    width: 1100px;
+    aspect-ratio: 1100 / 750; /* Mengunci rasio agar posisi elemen di atasnya presisi */
+    background: url('img/ui/plant.png') no-repeat center center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    position: relative;
+}
+
+/* --- TABS --- */
+.tabs {
+    display: flex;
+    z-index: 20;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.tabs button.active {
+    color: #55ff55;
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* --- LIST PEMILIHAN KARTU (KIRI) --- */
+.list-container {
+    width: 60%;
+    height: 80%;
+    overflow-y: auto;
+    padding: 25px;
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    background: transparent; /* Background bening agar plant.png terlihat */
+}
+
+.list-container::-webkit-scrollbar { width: 2px; }
+.list-container::-webkit-scrollbar-thumb { background: #4a3728; border-radius: 10px; }
+
+/* --- SEED CARD --- */
+.seed-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.seed-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.seed-card img:first-child { z-index: 1; position: absolute; width: 100%; height: 100%; top:0; left:0; } /* Card */
+.seed-card img:last-child { z-index: 3; position: absolute; width: 85%; height: 55%; top: 15%; left: 7.5%; object-fit: contain; } /* Plant */
+
+.detail-view {
+    /* Ukuran sesuai permintaan */
+    width: 30%; 
+    height: 80%;
+    
+    /* Posisi: Tengah-tengah di dalam area kanan */
+    margin: auto; 
+    position: relative;
+    
+    /* Background */
+    background: url('img/ui/plant_infoUI.png') no-repeat center center;
+    background-size: 100% 100%;
+    
+    /* Tambahan agar isi di dalamnya tidak berantakan saat mengecil */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Preview Box (Posisi Terkunci di Atas) */
+.preview-box {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seed-composite {
+    position: relative;
+    height: 80%;
+    aspect-ratio: 3 / 4;
+}
+
+.seed-composite img:first-child { z-index: 1; position: absolute; width: 100%; height: 100%; }
+.seed-composite img:last-child { z-index: 3; position: absolute; width: 85%; height: 55%; top: 15%; left: 7.5%; object-fit: contain; }
+
+/* Nama Tanaman (Posisi Terkunci) */
+#detail-name {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: #ffff55;
+    text-shadow: 2px 2px 0 #000;
+    margin: 0;
+    font-weight: 900;
+}
+
+/* Area Deskripsi (Posisi Terkunci di Area Kertas) */
+.info-scroll-area {
+    position: absolute;
+    top: 48%;    /* Titik mulai kertas cokelat */
+    bottom: 9%;  /* Batas bawah bingkai biru */
+    left: 8%;   /* Jarak kiri dari bingkai biru */
+    right: 8%;  /* Jarak kanan dari bingkai biru */
+    overflow-y: auto;
+    padding: 0 10px;
+    color: #0d266b; /* Warna teks Fusion */
+    font-weight: 600;
+    line-height: 1.3;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+}
+
+.info-scroll-area::-webkit-scrollbar { width: 6px; }
+.info-scroll-area::-webkit-scrollbar-thumb { background: rgba(139, 69, 19, 0.4); border-radius: 10px; }
+
+/* --- TEKS GAMBAR TIDAK ADA --- */
+.no-image-text {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+    color: #ff0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 0;
+}
+
+/* --- FONT SWITCHER --- */
+#font-switcher {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 100;
+    padding: 8px 15px;
+    background: #4a3728;
+    color: white;
+    border: 2px solid #ffff55;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+.card-cost-display {
+    position: absolute;
+    width: 70%;
+    bottom: 7px;
+    text-align: center;
+    color: #000; /* Warna angka hitam */
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.card-cost-display.preview-mode {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    bottom: 8%;
+}
+
+/* Pastikan gambar tanaman tidak menutupi angka */
+.seed-card img:last-child {
+    z-index: 3;
+    position: absolute;
+    width: 85%;
+    height: 60%; /* Disesuaikan agar pas di tengah atas */
+    top: 10%;
+    left: 7.5%;
+    object-fit: contain;
+}
+
+.seed-composite img:last-child {
+    z-index: 3;
+    position: absolute;
+    width: 85%;
+    height: 60%;
+    top: 10%;
+    left: 7.5%;
+    object-fit: contain;
+}
