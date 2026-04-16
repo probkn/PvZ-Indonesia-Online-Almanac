@@ -1,4 +1,5 @@
 /* --- RESET & BASE --- */
+@font-face { font-family: 'Font1'; src: url('font/Font1.ttf'); }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,9 +19,14 @@ body {
 }
 
 /* --- FONT DEFINITIONS --- */
-@font-face { font-family: 'Font1'; src: url('font/font1.ttf'); }
 @media (max-width: 1200px) { body { font-size: 14px; } }
 @media (max-width: 800px) { body { font-size: 12px; } }
+@media (max-width: 1150px) {
+    .almanac-container {
+        width: 95vw; /* Mengikuti lebar layar jika monitor lebih kecil dari 1100px */
+        height: auto;
+    }
+}
 /* --- CONTAINER UTAMA --- */
 .almanac-container {
     width: 1100px;
@@ -234,5 +240,84 @@ body {
     height: 60%;
     top: 10%;
     left: 7.5%;
+    object-fit: contain;
+}
+
+/* --- ZOMBIE CARD --- */
+.zombie-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Biasanya kartu zombi lebih kotak */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.zombie-card:hover { transform: scale(1.1); z-index: 10; }
+
+/* Layer 1: Bingkai Jendela */
+.zombie-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Layer 2: Foto Zombi (Di Depan) */
+.zombie-pic {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.detail-view.plant-mode #detail-name {
+    top: 38%;
+}
+.detail-view.plant-mode .info-scroll-area {
+    top: 48%;
+    bottom: 9%;
+    left: 8%;
+    right: 8%;
+    color: #0d266b; /* Biru Fusion */
+}
+
+/* --- POSISI KHUSUS ZOMBI (Atur angka ini agar pas) --- */
+.detail-view.zombie-mode #detail-name {
+    top: 53%; /* Contoh: Nama zombi mungkin lebih naik */
+}
+.detail-view.zombie-mode .info-scroll-area {
+    top: 62%;    /* Sesuaikan dengan letak area cokelat di zombie_infoUI */
+    bottom: 12%; 
+    left: 10%;
+    right: 10%;
+    color: #e0e0e0; /* Teks zombi biasanya lebih terang di atas bg gelap */
+}
+
+/* Atur juga posisi preview gambarnya kalau perlu */
+.detail-view.zombie-mode .preview-box {
+    top: 13%;
+    height: 30%;
+}
+/* Khusus preview zombi tanpa bingkai */
+.detail-view.zombie-mode .seed-composite {
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* Pastikan tidak ada sisa bg */
+}
+
+.detail-view.zombie-mode .seed-composite img {
+    position: relative; /* Balikkan ke relative karena tidak perlu ditumpuk */
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    z-index: 5;
     object-fit: contain;
 }

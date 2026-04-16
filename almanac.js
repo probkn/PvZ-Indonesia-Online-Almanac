@@ -1,5 +1,8 @@
 let cachedPlants = null;
 let bgConfig = [];
+let currentTab = 'plants'; // Default awal
+let cachedZombies = null;
+let isZombieDataPrepared = false;
 
 async function init() {
     try {
@@ -14,12 +17,34 @@ async function init() {
     }
 }
 
+let isDataPrepared = false; // Flag agar tidak proses ulang
+
 async function loadPlantsData() {
-    if (cachedPlants) return;
+    if (isDataPrepared) return;
+    
     const res = await fetch('data/plants.json');
     const data = await res.json();
-    cachedPlants = data.plants;
-    console.log("Data tanaman dimuat 1x.");
+    
+    // PROSES SEKALIGUS (The Flash Way)
+    // Kita siapkan semua data (harga & jalur gambar) di awal
+    const preparedData = await Promise.all(data.plants.map(async (item) => {
+        const costOnly = getOnlyCostNumber(item.cost);
+        
+        // Cek gambar cukup satu kali seumur hidup aplikasi berjalan
+        const webpPath = `img/plants/${item.seedType}.webp`;
+        const pngPath = `img/plants/${item.seedType}.png`;
+        const imgPath = await checkImage(webpPath) ? webpPath : (await checkImage(pngPath) ? pngPath : null);
+
+        return {
+            ...item,
+            processedCost: costOnly,
+            processedImg: imgPath
+        };
+    }));
+
+    cachedPlants = preparedData;
+    isDataPrepared = true; 
+    console.log("Data & Asset siap dikonsumsi!");
 }
 
 function getBgBySeedType(id) {
@@ -53,48 +78,55 @@ function parseFusionText(text) {
         .replace(/\n/g, '<br>');
 }
 
-// 1. Fungsi ambil harga (Tetap amankan angka size=14)
 function getOnlyCostNumber(text) {
     if (!text || text.trim() === "") return null;
-    const colorMatch = text.match(/<color=[^>]+>(\d+)<\/color>/);
-    if (colorMatch) return colorMatch[1];
-    const allNumbers = text.match(/\d+/g);
-    if (allNumbers) {
-        const cost = allNumbers.find(num => num !== "14");
-        return cost || allNumbers[0];
+
+    // 1. Cek apakah ada kata "Gratis" (Case Insensitive)
+    if (text.toLowerCase().includes("gratis")) {
+        return "Gratis";
     }
-    return null;
+
+    // 2. Gunakan Regex untuk mencari angka yang didahului oleh '>' (Logika: >Harga)
+    // Atau angka di dalam tag color setelah kata Biaya
+    const priceMatch = text.match(/>(\d+)</) || text.match(/color=[^>]+>(\d+)<\/color>/);
+    
+    if (priceMatch) {
+        return priceMatch[1];
+    }
+
+    // 3. Fallback: Cari angka pertama yang BUKAN bagian dari "=14>"
+    // Kita hapus dulu semua pola "=angka>" agar tidak mengganggu
+    const cleanedText = text.replace(/=\d+>/g, ''); 
+    const fallbackMatch = cleanedText.match(/\d+/);
+    
+    return fallbackMatch ? fallbackMatch[0] : null;
 }
 
-// 2. Fungsi Render - Logic diperbaiki agar tidak "False NULL"
 async function renderPlants() {
     const list = document.getElementById('item-list');
     list.innerHTML = "";
+    
+    // Pastikan data sudah siap sebelum render
     if (!cachedPlants) await loadPlantsData();
 
-    // Render satu-satu dengan urutan yang benar
     for (const item of cachedPlants) {
+        // Satpam tab
+        if (currentTab !== 'plants') return;
+
         const card = document.createElement('div');
         card.className = 'seed-card';
         
-        const bgPath = getBgBySeedType(item.seedType);
-        const costOnly = getOnlyCostNumber(item.cost);
-        
-        // Cek gambar (WebP dulu baru PNG)
-        const webpPath = `img/plants/${item.seedType}.webp`;
-        const pngPath = `img/plants/${item.seedType}.png`;
-        
-        const imgPath = await checkImage(webpPath) ? webpPath : (await checkImage(pngPath) ? pngPath : null);
+        // --- DEFINISIKAN BGPATH DI SINI ---
+        const bgPath = getBgBySeedType(item.seedType); 
 
-        // URUTAN: BG -> COST -> TEXT (IF NULL) -> PLANT IMAGE
         card.innerHTML = `
             <img src="${bgPath}">
-            ${costOnly !== null ? `<div class="card-cost-display">${costOnly}</div>` : ''}
-            ${!imgPath ? '<div class="no-image-text">Gambar Tidak Ada</div>' : ''}
-            <img src="${imgPath || ''}" style="${!imgPath ? 'display:none' : ''}">
+            ${item.processedCost ? `<div class="card-cost-display">${item.processedCost}</div>` : ''}
+            ${!item.processedImg ? '<div class="no-image-text">Gambar Tidak Ada</div>' : ''}
+            <img src="${item.processedImg || ''}" style="${!item.processedImg ? 'display:none' : ''}">
         `;
         
-        card.onclick = () => showDetail(item, imgPath);
+        card.onclick = () => showDetail(item, item.processedImg);
         list.appendChild(card);
     }
 }
@@ -126,23 +158,109 @@ function checkImage(url) {
     return new Promise((resolve) => {
         const img = new Image();
         img.onload = () => resolve(true);
-        img.onerror = () => resolve(false);
+        img.onerror = () => resolve(false);let cachedPlants = null;
         img.src = url;
     });
 }
+async function loadZombiesData() {
+    if (isZombieDataPrepared) return;
+    
+    try {
+        const res = await fetch('data/zombies.json');
+        const data = await res.json();
+        
+        // Proses pengecekan gambar zombi (webp -> png)
+        const preparedData = await Promise.all(data.zombies.map(async (item) => {
+            const webpPath = `img/zombies/${item.theZombieType}.webp`;
+            const pngPath = `img/zombies/${item.theZombieType}.png`;
+            const imgPath = await checkImage(webpPath) ? webpPath : (await checkImage(pngPath) ? pngPath : null);
+
+            return {
+                ...item,
+                processedImg: imgPath
+            };
+        }));
+
+        cachedZombies = preparedData;
+        isZombieDataPrepared = true;
+    } catch (err) {
+        console.error("Gagal memuat data zombi:", err);
+    }
+}
+async function renderZombies() {
+    const list = document.getElementById('item-list');
+    list.innerHTML = "";
+    
+    if (!cachedZombies) await loadZombiesData();
+
+    for (const item of cachedZombies) {
+        // Satpam Race Condition
+        if (currentTab !== 'zombies') return;
+
+        const card = document.createElement('div');
+        card.className = 'zombie-card'; // Pakai class khusus zombi
+        
+        const windowUI = "img/ui/zombie_windowUI.png";
+
+        // LAYER: Belakang (windowUI), Depan (Foto Zombi)
+        card.innerHTML = `
+            <img src="${windowUI}" class="zombie-bg">
+            ${!item.processedImg ? '<div class="no-image-text">Gambar Tidak Ada</div>' : ''}
+            <img src="${item.processedImg || ''}" class="zombie-pic" style="${!item.processedImg ? 'display:none' : ''}">
+        `;
+        
+        card.onclick = () => showZombieDetail(item);
+        list.appendChild(card);
+    }
+}
+
+function showZombieDetail(item) {
+    const scrollArea = document.querySelector('.info-scroll-area');
+    if (scrollArea) scrollArea.scrollTop = 0;
+
+    document.getElementById('detail-name').innerText = item.name;
+    document.getElementById('detail-intro').innerHTML = parseFusionText(item.introduce || "");
+    document.getElementById('detail-info').innerHTML = parseFusionText(item.info || "");
+    document.getElementById('detail-cost').innerHTML = ""; // Zombi gratisan (ga punya harga)
+
+    const viewer = document.getElementById('detail-image-container');
+    const imgPath = item.processedImg;
+
+    // CUKUP 1 LAYER: Foto Zombi saja
+    viewer.innerHTML = `
+        ${!imgPath ? '<div class="no-image-text" style="font-size:12px">Gambar Tidak Ada</div>' : ''}
+        <img src="${imgPath || ''}" style="${!imgPath ? 'display:none' : 'object-fit: contain; width: 100%; height: 100%;'}">
+    `;
+}
 
 function switchTab(type) {
+    currentTab = type;
     const list = document.getElementById('item-list');
     const detail = document.getElementById('detail-view');
+    const container = document.querySelector('.almanac-container');
+    
     document.getElementById('btn-plants').className = (type === 'plants' ? 'active' : '');
     document.getElementById('btn-zombies').className = (type === 'zombies' ? 'active' : '');
 
     if (type === 'zombies') {
-        list.innerHTML = "<h2 style='padding:20px; color:#aaa;'>Coming Soon...</h2>";
-        detail.style.visibility = "hidden";
+        container.style.backgroundImage = "url('img/ui/zombie.png')";
+        detail.style.backgroundImage = "url('img/ui/zombie_infoUI.png')";
+        
+        // Tambahkan class zombie dan hapus class plant
+        detail.classList.add('zombie-mode');
+        detail.classList.remove('plant-mode');
+        document.getElementById('detail-name').style.color = "#11ff00"
+        
+        renderZombies();
     } else {
+        container.style.backgroundImage = "url('img/ui/plant.png')";
+        detail.style.backgroundImage = "url('img/ui/plant_infoUI.png')";
+        
+        // Tambahkan class plant dan hapus class zombie
+        detail.classList.add('plant-mode');
+        detail.classList.remove('zombie-mode');
+        
         renderPlants();
-        detail.style.visibility = "visible";
     }
 }
 
