@@ -1,10 +1,16 @@
 {
   "bg_mapping": [
-    { "start": 0, "end": 5, "bg": "seedlinkage" },
-    { "start": 40, "end": 40, "bg": "seedlinkage" },
-    { "start": 1027, "end": 1047, "bg": "SeedPacket_Other" },
+    { "start": 0, "end": 5, "bg": "SeedPacket_Larger" },
+    { "start": 40, "end": 40, "bg": "SeedPacket_Larger" },
+    { "start": 1027, "end": 1027, "bg": "seedp" },
+    { "start": 1070, "end": 1070, "bg": "seedp" },
+    { "start": 1060, "end": 1060, "bg": "seedp" },
+    { "start": 1067, "end": 1067, "bg": "seedp" },
     { "start": 6, "end": 11, "bg": "SeedPacket_Night" },
     { "start": 12, "end": 18, "bg": "SeedPacket_Pool" },
+    { "start": 35, "end": 39, "bg": "SeedPacket_Pool" },
+    { "start": 33, "end": 33, "bg": "SeedPacket_Pool" },
+    { "start": 233, "end": 233, "bg": "SeedPacket_Pool" },
     { "start": 19, "end": 25, "bg": "seedfog" },
     { "start": 26, "end": 32, "bg": "seedroof" }
   ]

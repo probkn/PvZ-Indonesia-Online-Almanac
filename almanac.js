@@ -48,9 +48,9 @@ async function loadPlantsData() {
 }
 
 function getBgBySeedType(id) {
-    if (!bgConfig) return "img/card/seedp.png";
+    if (!bgConfig) return "img/card/SeedPacket_Larger.png";
     const config = bgConfig.find(c => id >= c.start && id <= c.end);
-    return config ? `img/card/${config.bg}.png` : `img/card/seedp.png`;
+    return config ? `img/card/${config.bg}.png` : `img/card/SeedPacket_Larger.png`;
 }
 
 // Fungsi cek gambar: Mencoba WebP dulu, lalu PNG
@@ -158,10 +158,11 @@ function checkImage(url) {
     return new Promise((resolve) => {
         const img = new Image();
         img.onload = () => resolve(true);
-        img.onerror = () => resolve(false);let cachedPlants = null;
+        img.onerror = () => resolve(false);
         img.src = url;
     });
 }
+
 async function loadZombiesData() {
     if (isZombieDataPrepared) return;
     
@@ -198,13 +199,12 @@ async function renderZombies() {
         if (currentTab !== 'zombies') return;
 
         const card = document.createElement('div');
-        card.className = 'zombie-card'; // Pakai class khusus zombi
+        card.className = 'seed-card zombie-card';
         
-        const windowUI = "img/ui/zombie_windowUI.png";
+        const cardBg = "img/card/SeedPacket_Larger.png";
 
-        // LAYER: Belakang (windowUI), Depan (Foto Zombi)
         card.innerHTML = `
-            <img src="${windowUI}" class="zombie-bg">
+            <img src="${cardBg}" class="zombie-bg">
             ${!item.processedImg ? '<div class="no-image-text">Gambar Tidak Ada</div>' : ''}
             <img src="${item.processedImg || ''}" class="zombie-pic" style="${!item.processedImg ? 'display:none' : ''}">
         `;
